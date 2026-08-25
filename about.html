@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Afsel Caterers & Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cream">
+    
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+            </div>
+            <a href="index.html" class="logo-img-wrap"><div class="logo-badge-ring"><img src="afsal-logo.png" alt="Afsel Caterers Logo" class="nav-logo-img"></div></a>
+            <div class="nav-right">
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="index.html#contact" class="btn btn-pill">Contact Us</a>
+            </div>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#contact">Contact Us</a>
+    </div>
+
+    <!-- About Hero Banner -->
+    <section class="about-section page-padding">
+        <div class="about-container">
+            <div class="about-illustration">
+                <!-- SVG: Serving Cloche (catering specific) -->
+                <svg viewBox="0 0 200 240" width="340px" style="filter:drop-shadow(4px 4px 0 var(--brand-dark));">
+                    <!-- Plate/base -->
+                    <ellipse cx="100" cy="190" rx="88" ry="16" fill="var(--white-bg)" stroke="var(--brand-dark)" stroke-width="4"/>
+                    <!-- Cloche dome -->
+                    <path d="M 18,190 C 18,100 182,100 182,190 Z" fill="var(--cream-bg)" stroke="var(--brand-dark)" stroke-width="4"/>
+                    <!-- Handle top -->
+                    <ellipse cx="100" cy="105" rx="16" ry="8" fill="var(--brand-yellow)" stroke="var(--brand-dark)" stroke-width="4"/>
+                    <rect x="94" y="97" width="12" height="16" fill="var(--brand-yellow)" stroke="var(--brand-dark)" stroke-width="3"/>
+                    <!-- Steam lines -->
+                    <path d="M 80,88 Q 75,72 82,58" fill="none" stroke="var(--brand-dark)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M 100,82 Q 95,66 102,52" fill="none" stroke="var(--brand-dark)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M 120,88 Q 125,72 118,58" fill="none" stroke="var(--brand-dark)" stroke-width="3" stroke-linecap="round"/>
+                    <!-- Plate rim detail -->
+                    <ellipse cx="100" cy="190" rx="76" ry="10" fill="none" stroke="var(--brand-dark)" stroke-width="3"/>
+                    <!-- Stars/sparkles -->
+                    <text x="40" y="155" font-size="20" fill="var(--brand-yellow)">★</text>
+                    <text x="148" y="155" font-size="16" fill="var(--brand-red)">★</text>
+                    <text x="30" y="130" font-size="12" fill="var(--brand-red)">✦</text>
+                </svg>
+                <!-- Stamp Badge with real logo (tilted) -->
+                <div style="position: absolute; bottom: 10px; right: 0; transform: rotate(-12deg); max-width: 200px; filter: drop-shadow(3px 3px 0 rgba(42,16,16,0.15)); z-index: 10;">
+                    <svg viewBox="0 0 290 155" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="8" width="278" height="143" rx="22" ry="22" fill="rgba(42,16,16,0.12)"/>
+                        <rect x="3" y="3" width="278" height="143" rx="20" ry="20" fill="#FFFDF8" stroke="#2A1010" stroke-width="3"/>
+                        <rect x="10" y="10" width="264" height="129" rx="15" ry="15" fill="none" stroke="#2A1010" stroke-width="1.5" stroke-dasharray="6,4"/>
+                        <path d="M 20,20 Q 14,14 14,22" fill="none" stroke="#E8AC3A" stroke-width="2"/>
+                        <path d="M 264,20 Q 270,14 270,22" fill="none" stroke="#E8AC3A" stroke-width="2"/>
+                        <path d="M 20,133 Q 14,139 14,131" fill="none" stroke="#E8AC3A" stroke-width="2"/>
+                        <path d="M 264,133 Q 270,139 270,131" fill="none" stroke="#E8AC3A" stroke-width="2"/>
+                        <image href="afsal-logo.png" x="122" y="12" width="46" height="46" preserveAspectRatio="xMidYMid meet"/>
+                        <rect x="16" y="66" width="252" height="42" rx="8" fill="#460000"/>
+                        <rect x="16" y="66" width="252" height="16" rx="8" fill="rgba(255,255,255,0.06)"/>
+                        <text x="142" y="91" font-family="Anton, sans-serif" font-size="20" fill="white" text-anchor="middle" letter-spacing="3">AFSEL CATERERS</text>
+                        <line x1="35" y1="115" x2="249" y2="115" stroke="#2A1010" stroke-width="1" opacity="0.3"/>
+                        <text x="142" y="128" font-family="Outfit, sans-serif" font-size="9" fill="#460000" text-anchor="middle" letter-spacing="3" font-weight="600">ESTABLISHED IN 2005</text>
+                        <text x="142" y="145" font-size="10" fill="#E8AC3A" text-anchor="middle" letter-spacing="3" font-family="serif">★ ★ ★ ★ ★</text>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <h2 class="section-title text-dark">Experience the<br>world's finest<br>catering</h2>
+                <p class="section-desc">Discover the unparalleled taste and presentation that only the finest ingredients and dedicated professionals can provide. At Afsel Caterers and Events, we go beyond food — we craft experiences that stay with you forever.</p>
+                
+                <div class="about-features">
+                    <div class="feature bg-transparent border-thick radius-12">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--brand-red)" stroke-width="2.5"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
+                        </div>
+                        <h4 class="feature-title">Master Chefs</h4>
+                        <p class="feature-desc">We go to great lengths to ensure that our culinary team is of the highest caliber.</p>
+                    </div>
+                    <div class="feature bg-transparent border-thick radius-12">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--brand-red)" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h4 class="feature-title">100% Trusted</h4>
+                        <p class="feature-desc">Our reputation is built on reliability, consistency, and complete customer satisfaction.</p>
+                    </div>
+                    <div class="feature bg-transparent border-thick radius-12">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--brand-red)" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h4 class="feature-title">On-Time Delivery</h4>
+                        <p class="feature-desc">We respect your schedule and ensure every event runs smoothly on time.</p>
+                    </div>
+                    <div class="feature bg-transparent border-thick radius-12">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--brand-red)" stroke-width="2.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h4 class="feature-title">Elegant Setup</h4>
+                        <p class="feature-desc">Our decoration masters create magic tailored to your vision and theme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-dark bg-dark text-white">
+        <!-- Wavy Transition: Cream to Dark Footer -->
+        <svg class="wave-footer" viewBox="0 0 1440 60" preserveAspectRatio="none" style="background-color: var(--cream-bg);">
+            <path fill="var(--brand-dark)" d="M0,60 C150,0 350,60 500,30 C650,0 850,60 1000,30 C1150,0 1350,60 1440,30 L1440,60 L0,60 Z"></path>
+        </svg>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <h2 class="footer-title">Stay in the loop with<br>Afsel Caterers</h2>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn-circle">→</button>
+                </form>
+                <div class="footer-contact-info mt-30">
+                    <p>+015982694756</p>
+                    <p>info@afselcaterers.com</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Page Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h4>Services</h4>
+                    <a href="#">Wedding Catering</a>
+                    <a href="#">Stage Decoration</a>
+                    <a href="#">Event Management</a>
+                    <a href="#">Private Parties</a>
+                </div>
+            </div>
+            <div class="footer-card text-dark">
+                <h3>Our location</h3>
+                <p>123 Event Street<br>Cateringville, CA 90210</p>
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--brand-red)" stroke-width="2" style="margin:12px auto;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <h3>Opening hours</h3>
+                <p>Mon - Fri: 7:00 AM – 8:00 PM<br>Sat - Sun: 8:00 AM – 6:00 PM</p>
+                <a href="index.html#contact" class="btn btn-pill-solid bg-yellow text-dark mt-30">Book an event</a>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <p>Designed by Afsel Caterers & Events</p>
+            <div class="footer-socials">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">WA</a>
+            </div>
+            <p>Privacy Policy</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Afsel Caterers & Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cream">
+    
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <a href="index.html" class="logo-img-wrap"><div class="logo-badge-ring"><img src="afsal-logo.png" alt="Afsel Caterers Logo" class="nav-logo-img"></div></a>
+            <div class="nav-right">
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="index.html#contact" class="btn btn-pill">Contact Us</a>
+            </div>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="index.html#contact">Contact Us</a>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="gallery-page page-padding">
+        <div class="container">
+            <div class="gallery-block">
+                <h2 class="section-title text-center text-dark">Our Work</h2>
+                <p class="section-desc text-center">Take a look at some of the beautiful moments we've crafted for our clients.</p>
+                
+                <div class="gallery-grid" id="google-drive-gallery">
+                    <div class="gallery-item"><img src="images/hero_image.jpg" alt="Wedding banquet"></div>
+                    <div class="gallery-item"><img src="images/stage_decoration.jpg" alt="Stage decoration"></div>
+                    <div class="gallery-item"><img src="images/catering_service.jpg" alt="Catering service"></div>
+                    <div class="gallery-item"><img src="images/event_service.jpg" alt="Event setup"></div>
+                    <div class="gallery-item"><img src="images/hero_image.jpg" alt="Event hall"></div>
+                    <div class="gallery-item"><img src="images/stage_decoration.jpg" alt="Wedding stage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-dark bg-dark text-white">
+        <svg class="wave-footer" viewBox="0 0 1440 60" preserveAspectRatio="none" style="background-color: var(--cream-bg);">
+            <path fill="var(--brand-dark)" d="M0,60 C150,0 350,60 500,30 C650,0 850,60 1000,30 C1150,0 1350,60 1440,30 L1440,60 L0,60 Z"></path>
+        </svg>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <h2 class="footer-title">Stay in the loop with<br>Afsel Caterers</h2>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn-circle">→</button>
+                </form>
+                <div class="footer-contact-info mt-30">
+                    <p>+015982694756</p>
+                    <p>info@afselcaterers.com</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Page Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h4>Services</h4>
+                    <a href="#">Wedding Catering</a>
+                    <a href="#">Stage Decoration</a>
+                    <a href="#">Event Management</a>
+                    <a href="#">Private Parties</a>
+                </div>
+            </div>
+            <div class="footer-card text-dark">
+                <h3>Our location</h3>
+                <p>123 Event Street<br>Cateringville, CA 90210</p>
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--brand-red)" stroke-width="2" style="margin:12px auto;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <h3>Opening hours</h3>
+                <p>Mon - Fri: 7:00 AM – 8:00 PM<br>Sat - Sun: 8:00 AM – 6:00 PM</p>
+                <a href="index.html#contact" class="btn btn-pill-solid bg-yellow text-dark mt-30">Book an event</a>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <p>Designed by Afsel Caterers & Events</p>
+            <div class="footer-socials">
+                <a href="#">FB</a><a href="#">IG</a><a href="#">WA</a>
+            </div>
+            <p>Privacy Policy</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
