@@ -3,746 +3,813 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afsel Caterers & Events</title>
+    <title>Afsal Caterers & Events | Kerala's Premier Catering & Event Management Firm</title>
+    <meta name="description" content="Afsal Caterers & Events — Founded in 2000 by Mr. Ashker C.H. High-end catering, luxury wedding stages, German tents, light & sound, and complete event production across Kerala.">
     
-    <!-- Google Fonts -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- Google Fonts: Single Unified Modern Typeface (Outfit) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Master Stylesheet -->
+        <!-- Favicon -->
+    <link rel="icon" type="image/png" href="afsal-logo.png">
+    <link rel="apple-touch-icon" href="afsal-logo.png">
+
+    <link rel="stylesheet" href="css/style.css?v=3.5">
 </head>
-<body class="bg-cream">
-    
-    <!-- Navbar -->
-    <header class="header" id="header">
-        <div class="nav-container">
-            <div class="nav-left">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-            </div>
-            
-            <a href="index.html" class="logo-img-wrap">
-                <div class="logo-badge-ring">
-                    <img src="afsal-logo.png" alt="Afsel Caterers Logo" class="nav-logo-img">
+<body class="bg-white">
+
+    <!-- Main Site Navigation (Standard Clean Light Header) -->
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo-container" aria-label="Afsal Caterers Homepage">
+                <img src="afsal-logo.png" alt="Afsal Caterers Logo" class="brand-logo-img">
+                <div class="brand-text-block">
+                    <span class="brand-text-name">AFSAL</span>
+                    <span class="brand-text-sub">Caterers &amp; Events</span>
                 </div>
             </a>
-            
-            <div class="nav-right">
-                <a href="menu.html" class="nav-link">Menu</a>
-                <a href="gallery.html" class="nav-link">Gallery</a>
-                <a href="#contact" class="btn btn-pill">Contact Us</a>
-            </div>
-            
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <!-- Desktop Nav Links -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-action">
+                <a href="tel:+919037888910" class="nav-phone-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>+91 90378 88910</span>
+                </a>
+                <a href="contact.html" class="btn btn-primary btn-pill">Plan An Event</a>
+                <button class="hamburger" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="#contact">Contact Us</a>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero-section bg-cream" id="home">
-        <div class="hero-full-layout">
-
-            <!-- LEFT SIDE: Botanical + Stamp -->
-            <div class="hero-left-side">
-
-                <!-- Juice Glass Cartoon Illustration -->
-                <svg class="hero-botanical" viewBox="0 0 220 310" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="juice1" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stop-color="#FF8C42"/>
-                            <stop offset="100%" stop-color="#E05020"/>
-                        </linearGradient>
-                        <linearGradient id="glass1" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="rgba(255,255,255,0.7)"/>
-                            <stop offset="100%" stop-color="rgba(255,255,255,0.15)"/>
-                        </linearGradient>
-                        <linearGradient id="juice2" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stop-color="#E8D84A"/>
-                            <stop offset="100%" stop-color="#C8A820"/>
-                        </linearGradient>
-                        <linearGradient id="juice3" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stop-color="#5CC85A"/>
-                            <stop offset="100%" stop-color="#2A7A28"/>
-                        </linearGradient>
-                        <radialGradient id="iceBall" cx="35%" cy="30%" r="65%">
-                            <stop offset="0%" stop-color="#E8F4FF"/>
-                            <stop offset="100%" stop-color="#B0D0F0"/>
-                        </radialGradient>
-                    </defs>
-
-                    <!-- === TALL GLASS (center, main) === -->
-                    <!-- Glass body trapezoid -->
-                    <path d="M 78,70 L 68,230 L 140,230 L 130,70 Z" fill="url(#juice1)" stroke="#2A1010" stroke-width="3"/>
-                    <!-- Glass wall overlay (transparency) -->
-                    <path d="M 78,70 L 68,230 L 140,230 L 130,70 Z" fill="url(#glass1)"/>
-                    <!-- Juice level top surface -->
-                    <ellipse cx="104" cy="70" rx="26" ry="7" fill="#FF7030" stroke="#2A1010" stroke-width="2"/>
-                    <!-- Glass rim top -->
-                    <path d="M 72,68 L 136,68" stroke="#2A1010" stroke-width="3" stroke-linecap="round"/>
-                    <!-- Glass base bottom -->
-                    <ellipse cx="104" cy="230" rx="36" ry="10" fill="#D04010" stroke="#2A1010" stroke-width="2.5"/>
-                    <!-- Ice cubes inside -->
-                    <rect x="82" y="90" width="20" height="20" rx="4" fill="url(#iceBall)" stroke="#2A1010" stroke-width="1.5" opacity="0.85"/>
-                    <rect x="106" y="100" width="18" height="18" rx="4" fill="url(#iceBall)" stroke="#2A1010" stroke-width="1.5" opacity="0.85" transform="rotate(12 115 109)"/>
-                    <rect x="88" y="115" width="16" height="16" rx="3" fill="url(#iceBall)" stroke="#2A1010" stroke-width="1.5" opacity="0.7" transform="rotate(-8 96 123)"/>
-                    <!-- Shine highlight on glass -->
-                    <path d="M 82,80 C 80,120 78,160 80,200" stroke="rgba(255,255,255,0.55)" stroke-width="6" stroke-linecap="round" fill="none"/>
-                    <path d="M 90,75 C 89,100 88,130 89,160" stroke="rgba(255,255,255,0.3)" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <!-- Straw -->
-                    <path d="M 125,18 L 115,90" stroke="#460000" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M 125,18 L 115,90" stroke="#FFFDF8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6,6"/>
-                    <!-- Straw tip detail -->
-                    <circle cx="125" cy="17" r="4" fill="#460000" stroke="#2A1010" stroke-width="1.5"/>
-                    <!-- Orange fruit slice garnish -->
-                    <circle cx="142" cy="68" r="16" fill="#FF9040" stroke="#2A1010" stroke-width="2.5"/>
-                    <circle cx="142" cy="68" r="10" fill="#FFBA70" stroke="#2A1010" stroke-width="1.5"/>
-                    <line x1="142" y1="58" x2="142" y2="78" stroke="#2A1010" stroke-width="1.2"/>
-                    <line x1="132" y1="68" x2="152" y2="68" stroke="#2A1010" stroke-width="1.2"/>
-                    <line x1="135" y1="61" x2="149" y2="75" stroke="#2A1010" stroke-width="1"/>
-                    <line x1="149" y1="61" x2="135" y2="75" stroke="#2A1010" stroke-width="1"/>
-
-                    <!-- === SHORT GLASS (back left, lime/green) === -->
-                    <path d="M 22,130 L 16,210 L 62,210 L 56,130 Z" fill="url(#juice3)" stroke="#2A1010" stroke-width="2.5"/>
-                    <path d="M 22,130 L 16,210 L 62,210 L 56,130 Z" fill="url(#glass1)"/>
-                    <ellipse cx="39" cy="130" rx="17" ry="5" fill="#3A9838" stroke="#2A1010" stroke-width="2"/>
-                    <ellipse cx="39" cy="210" rx="23" ry="7" fill="#1A6818" stroke="#2A1010" stroke-width="2"/>
-                    <!-- Mint leaf on green drink -->
-                    <path d="M 38,122 C 30,108 40,96 50,108 C 44,108 42,116 38,122 Z" fill="#3DB840" stroke="#2A1010" stroke-width="1.5"/>
-                    <path d="M 38,122 C 46,108 56,96 46,108" fill="#5ACB5A" stroke="#2A1010" stroke-width="1"/>
-                    <!-- Straw green glass -->
-                    <path d="M 52,90 L 47,132" stroke="#E8AC3A" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M 52,90 L 47,132" stroke="#FFFDF8" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5,5"/>
-                    <!-- Shine -->
-                    <path d="M 27,140 C 26,165 25,185 27,205" stroke="rgba(255,255,255,0.5)" stroke-width="4" stroke-linecap="round" fill="none"/>
-
-                    <!-- === SMALL GLASS (front right, lemon yellow) === -->
-                    <path d="M 152,160 L 147,235 L 195,235 L 190,160 Z" fill="url(#juice2)" stroke="#2A1010" stroke-width="2.5"/>
-                    <path d="M 152,160 L 147,235 L 195,235 L 190,160 Z" fill="url(#glass1)"/>
-                    <ellipse cx="171" cy="160" rx="19" ry="6" fill="#D4C030" stroke="#2A1010" stroke-width="2"/>
-                    <ellipse cx="171" cy="235" rx="24" ry="7" fill="#A08010" stroke="#2A1010" stroke-width="2"/>
-                    <!-- Lemon wedge on rim -->
-                    <path d="M 194,158 C 205,148 215,155 208,165 C 204,170 196,168 194,158 Z" fill="#F0E040" stroke="#2A1010" stroke-width="2"/>
-                    <path d="M 194,158 C 200,158 208,162 208,165" stroke="#2A1010" stroke-width="1" fill="none"/>
-                    <!-- Straw yellow -->
-                    <path d="M 188,120 L 183,162" stroke="#460000" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M 188,120 L 183,162" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5,5"/>
-                    <!-- Shine -->
-                    <path d="M 158,170 C 157,195 156,215 158,230" stroke="rgba(255,255,255,0.5)" stroke-width="4" stroke-linecap="round" fill="none"/>
-
-                    <!-- Floating bubbles / droplets around glasses -->
-                    <circle cx="60" cy="85" r="6" fill="#FF8C42" stroke="#2A1010" stroke-width="1.8" opacity="0.8"/>
-                    <circle cx="70" cy="72" r="4" fill="#E8D84A" stroke="#2A1010" stroke-width="1.5" opacity="0.8"/>
-                    <circle cx="48" cy="75" r="5" fill="#5CC85A" stroke="#2A1010" stroke-width="1.5" opacity="0.7"/>
-                    <circle cx="160" cy="135" r="5" fill="#FF8C42" stroke="#2A1010" stroke-width="1.5" opacity="0.8"/>
-                    <circle cx="145" cy="120" r="4" fill="#E8D84A" stroke="#2A1010" stroke-width="1.5" opacity="0.7"/>
-
-                    <!-- 4-point sparkle top right -->
-                    <g transform="translate(200,50)">
-                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#E8AC3A" stroke-width="2.5"/>
-                        <line x1="-10" y1="0" x2="10" y2="0" stroke="#E8AC3A" stroke-width="2.5"/>
-                        <line x1="-7" y1="-7" x2="7" y2="7" stroke="#E8AC3A" stroke-width="1.5"/>
-                        <line x1="7" y1="-7" x2="-7" y2="7" stroke="#E8AC3A" stroke-width="1.5"/>
-                        <circle cx="0" cy="0" r="3" fill="#E8AC3A"/>
-                    </g>
-                    <!-- Small sparkle bottom left -->
-                    <g transform="translate(15,250) scale(0.7)">
-                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#460000" stroke-width="2.5"/>
-                        <line x1="-10" y1="0" x2="10" y2="0" stroke="#460000" stroke-width="2.5"/>
-                        <circle cx="0" cy="0" r="3" fill="#460000"/>
-                    </g>
-                </svg>
-
-                <!-- Stamp Badge with real logo (tilted) -->
-                <div class="hero-stamp" style="transform: translateX(-25%) rotate(-18deg); transform-origin: center bottom;">
-                    <svg viewBox="0 0 290 155" width="100%" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Shadow -->
-                        <rect x="8" y="8" width="278" height="143" rx="22" ry="22" fill="rgba(42,16,16,0.12)"/>
-                        <!-- Main card -->
-                        <rect x="3" y="3" width="278" height="143" rx="20" ry="20"
-                              fill="#FFFDF8" stroke="#2A1010" stroke-width="3"/>
-                        <!-- Inner dashed border -->
-                        <rect x="10" y="10" width="264" height="129" rx="15" ry="15"
-                              fill="none" stroke="#2A1010" stroke-width="1.5" stroke-dasharray="6,4"/>
-                        <!-- Corner flourishes -->
-                        <path d="M 20,20 Q 14,14 14,22" fill="none" stroke="#E8AC3A" stroke-width="2"/>
-                        <path d="M 264,20 Q 270,14 270,22" fill="none" stroke="#E8AC3A" stroke-width="2"/>
-                        <path d="M 20,133 Q 14,139 14,131" fill="none" stroke="#E8AC3A" stroke-width="2"/>
-                        <path d="M 264,133 Q 270,139 270,131" fill="none" stroke="#E8AC3A" stroke-width="2"/>
-                        <!-- Logo image -->
-                        <image href="afsal-logo.png" x="122" y="12" width="46" height="46" preserveAspectRatio="xMidYMid meet"/>
-                        <!-- Red banner -->
-                        <rect x="16" y="66" width="252" height="42" rx="8" fill="#460000"/>
-                        <rect x="16" y="66" width="252" height="16" rx="8" fill="rgba(255,255,255,0.06)"/>
-                        <!-- Name -->
-                        <text x="142" y="91" font-family="Anton, sans-serif" font-size="20"
-                              fill="white" text-anchor="middle" letter-spacing="3">AFSEL CATERERS</text>
-                        <!-- Divider -->
-                        <line x1="35" y1="115" x2="249" y2="115" stroke="#2A1010" stroke-width="1" opacity="0.3"/>
-                        <!-- Services sub-text -->
-                        <text x="142" y="128" font-family="Outfit, sans-serif" font-size="8.5"
-                              fill="#460000" text-anchor="middle" letter-spacing="2.5" font-weight="600">CATERING · DECORATION · ORGANISING</text>
-                        <!-- Stars -->
-                        <text x="142" y="145" font-size="10" fill="#E8AC3A" text-anchor="middle" letter-spacing="3" font-family="serif">★ ★ ★ ★ ★</text>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- CENTER: Text Content -->
-            <div class="hero-text-content">
-                <!-- <div class="hero-badge">
-                    <svg viewBox="0 0 110 110" class="badge-svg">
-                        <circle cx="55" cy="55" r="52" fill="none" stroke="#2A1010" stroke-width="2.5"/>
-                        <circle cx="55" cy="55" r="45" fill="none" stroke="#2A1010" stroke-width="1" stroke-dasharray="4,3"/>
-                        <path d="M 35,62 C 30,62 30,55 35,55 C 35,42 45,35 55,38 C 65,35 75,42 75,55 C 80,55 80,62 75,62 Z"
-                              fill="#F9F6ED" stroke="#2A1010" stroke-width="2"/>
-                        <ellipse cx="55" cy="62" rx="22" ry="6" fill="#F9F6ED" stroke="#2A1010" stroke-width="2"/>
-                        <ellipse cx="55" cy="38" rx="5" ry="3.5" fill="#E8AC3A" stroke="#2A1010" stroke-width="1.5"/>
-                        <path d="M 48,32 Q 46,26 49,21" fill="none" stroke="#2A1010" stroke-width="1.5" stroke-linecap="round"/>
-                        <path d="M 55,30 Q 53,24 56,19" fill="none" stroke="#2A1010" stroke-width="1.5" stroke-linecap="round"/>
-                        <path d="M 62,32 Q 64,26 61,21" fill="none" stroke="#2A1010" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div> -->
-
-                <h1 class="hero-title text-dark">Where every event<br>feels like Wowwwww!!!</h1>
-                <p class="hero-subtitle">Join us for the finest catering, delicious menus, and a warm atmosphere. Your perfect partner for celebrations.</p>
-                <a href="#services" class="btn btn-pill-solid">Explore our services</a>
-            </div>
-
-            <!-- RIGHT SIDE: Detailed Biryani Handi Illustration -->
-            <div class="hero-right-side">
-                <svg class="hero-right-illus" viewBox="0 0 240 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <radialGradient id="handiGrad" cx="35%" cy="30%" r="70%">
-                            <stop offset="0%" stop-color="#8B6914"/>
-                            <stop offset="60%" stop-color="#6B4F10"/>
-                            <stop offset="100%" stop-color="#3D2B08"/>
-                        </radialGradient>
-                        <radialGradient id="riceGrad" cx="50%" cy="20%" r="70%">
-                            <stop offset="0%" stop-color="#fff8e6"/>
-                            <stop offset="100%" stop-color="#f5e0a0"/>
-                        </radialGradient>
-                        <radialGradient id="plateGrad" cx="40%" cy="30%" r="70%">
-                            <stop offset="0%" stop-color="#ffffff"/>
-                            <stop offset="100%" stop-color="#e8e0d5"/>
-                        </radialGradient>
-                        <linearGradient id="steamGrad" x1="0%" y1="100%" x2="0%" y2="0%">
-                            <stop offset="0%" stop-color="#2A1010" stop-opacity="0.5"/>
-                            <stop offset="100%" stop-color="#2A1010" stop-opacity="0"/>
-                        </linearGradient>
-                        <radialGradient id="lidGrad" cx="40%" cy="25%" r="65%">
-                            <stop offset="0%" stop-color="#a07820"/>
-                            <stop offset="100%" stop-color="#5a4010"/>
-                        </radialGradient>
-                    </defs>
-
-                    <!-- Ladle wooden handle -->
-                    <path d="M 195,25 C 212,15 222,32 212,48 L 165,108"
-                          stroke="#8B6010" stroke-width="10" stroke-linecap="round" fill="none"/>
-                    <path d="M 198,28 C 212,20 220,34 213,46"
-                          stroke="rgba(255,255,255,0.2)" stroke-width="4" stroke-linecap="round" fill="none"/>
-                    <!-- Ladle bowl -->
-                    <ellipse cx="157" cy="116" rx="20" ry="14" fill="url(#plateGrad)" stroke="#2A1010" stroke-width="2.5"/>
-                    <ellipse cx="157" cy="115" rx="15" ry="10" fill="#FFF8F0" stroke="#2A1010" stroke-width="1.5"/>
-                    <!-- Gravy dripping from ladle -->
-                    <path d="M 148,127 C 145,145 140,162 136,182"
-                          stroke="#8B2000" stroke-width="6" stroke-linecap="round" fill="none"/>
-                    <path d="M 154,128 C 152,146 149,163 147,183"
-                          stroke="#460000" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.7"/>
-                    <ellipse cx="140" cy="186" rx="8" ry="6" fill="#8B2000" stroke="#2A1010" stroke-width="1.5"/>
-                    <ellipse cx="147" cy="188" rx="6" ry="4.5" fill="#460000" stroke="#2A1010" stroke-width="1.2"/>
-                    <ellipse cx="135" cy="182" rx="4" ry="3" fill="#6B1800" stroke="#2A1010" stroke-width="1"/>
-
-                    <!-- Steam wisps rising from handi -->
-                    <path d="M 82,200 Q 72,178 84,158 Q 96,138 86,115"
-                          stroke="url(#steamGrad)" stroke-width="5" stroke-linecap="round" fill="none"/>
-                    <path d="M 106,196 Q 96,173 108,152 Q 120,131 110,107"
-                          stroke="url(#steamGrad)" stroke-width="5" stroke-linecap="round" fill="none"/>
-                    <path d="M 130,200 Q 140,177 128,156 Q 116,135 126,112"
-                          stroke="url(#steamGrad)" stroke-width="5" stroke-linecap="round" fill="none"/>
-
-                    <!-- Pot ground shadow -->
-                    <ellipse cx="112" cy="326" rx="78" ry="14" fill="rgba(42,16,16,0.18)"/>
-
-                    <!-- Pot body -->
-                    <path d="M 36,240 C 28,282 40,316 112,324 C 184,332 198,290 190,250 L 182,220 C 182,220 42,220 36,240 Z"
-                          fill="url(#handiGrad)" stroke="#2A1010" stroke-width="3.5"/>
-                    <!-- Pot body highlight -->
-                    <path d="M 48,248 C 44,272 50,302 80,316"
-                          stroke="rgba(255,255,255,0.18)" stroke-width="9" stroke-linecap="round" fill="none"/>
-                    <path d="M 60,246 C 57,266 62,290 82,306"
-                          stroke="rgba(255,255,255,0.1)" stroke-width="5" stroke-linecap="round" fill="none"/>
-                    <!-- Pot decorative band -->
-                    <path d="M 42,262 C 40,270 42,278 50,282 C 100,295 170,290 182,278 C 188,272 188,264 186,258"
-                          stroke="rgba(255,255,255,0.12)" stroke-width="6" fill="none"/>
-
-                    <!-- Left handle -->
-                    <path d="M 36,258 C 16,256 14,278 34,278"
-                          fill="none" stroke="#2A1010" stroke-width="6" stroke-linecap="round"/>
-                    <path d="M 36,258 C 24,260 22,274 34,278"
-                          fill="#5a3c0a" stroke="#2A1010" stroke-width="3.5"/>
-                    <!-- Handle rivets -->
-                    <circle cx="36" cy="262" r="3" fill="#8B6010" stroke="#2A1010" stroke-width="1.5"/>
-                    <circle cx="36" cy="274" r="3" fill="#8B6010" stroke="#2A1010" stroke-width="1.5"/>
-
-                    <!-- Right handle -->
-                    <path d="M 190,258 C 210,256 212,278 192,278"
-                          fill="none" stroke="#2A1010" stroke-width="6" stroke-linecap="round"/>
-                    <path d="M 190,258 C 202,260 204,274 192,278"
-                          fill="#5a3c0a" stroke="#2A1010" stroke-width="3.5"/>
-                    <circle cx="190" cy="262" r="3" fill="#8B6010" stroke="#2A1010" stroke-width="1.5"/>
-                    <circle cx="190" cy="274" r="3" fill="#8B6010" stroke="#2A1010" stroke-width="1.5"/>
-
-                    <!-- Pot rim -->
-                    <ellipse cx="113" cy="220" rx="74" ry="17" fill="#4a3008" stroke="#2A1010" stroke-width="3.5"/>
-                    <ellipse cx="113" cy="220" rx="65" ry="12" fill="#7a5215" stroke="#2A1010" stroke-width="2"/>
-                    <ellipse cx="113" cy="218" rx="58" ry="8" fill="#8B6218" stroke="none"/>
-
-                    <!-- Lid dome -->
-                    <path d="M 44,220 C 40,196 186,196 182,220"
-                          fill="url(#lidGrad)" stroke="#2A1010" stroke-width="3"/>
-                    <ellipse cx="113" cy="220" rx="70" ry="11" fill="#8B6418" stroke="#2A1010" stroke-width="2.5"/>
-                    <!-- Lid highlight -->
-                    <path d="M 56,210 C 70,200 136,198 165,208"
-                          stroke="rgba(255,255,255,0.22)" stroke-width="7" stroke-linecap="round" fill="none"/>
-                    <!-- Lid knob base -->
-                    <ellipse cx="113" cy="196" rx="14" ry="7" fill="#E8AC3A" stroke="#2A1010" stroke-width="2.5"/>
-                    <!-- Knob body -->
-                    <rect x="105" y="186" width="16" height="12" rx="5" fill="#E8AC3A" stroke="#2A1010" stroke-width="2.5"/>
-                    <!-- Knob shine -->
-                    <ellipse cx="110" cy="187" rx="5" ry="3" fill="rgba(255,255,255,0.4)"/>
-
-                    <!-- Rice grains spilling at rim -->
-                    <path d="M 52,218 C 58,208 78,202 100,210 C 112,204 132,202 152,208 C 167,204 180,210 182,218"
-                          fill="url(#riceGrad)" stroke="#c8a830" stroke-width="1.5"/>
-                    <!-- Individual rice grains -->
-                    <ellipse cx="65"  cy="211" rx="6" ry="2.5" fill="#fffae8" stroke="#c8a830" stroke-width="1" transform="rotate(-18 65 211)"/>
-                    <ellipse cx="80"  cy="207" rx="6" ry="2.5" fill="#fffae8" stroke="#c8a830" stroke-width="1" transform="rotate(8 80 207)"/>
-                    <ellipse cx="96"  cy="204" rx="6" ry="2.5" fill="#fffae8" stroke="#c8a830" stroke-width="1" transform="rotate(-5 96 204)"/>
-                    <ellipse cx="112" cy="203" rx="6" ry="2.5" fill="#fffae8" stroke="#c8a830" stroke-width="1" transform="rotate(12 112 203)"/>
-                    <ellipse cx="128" cy="204" rx="6" ry="2.5" fill="#fffae8" stroke="#c8a830" stroke-width="1" transform="rotate(-8 128 204)"/>
-                    <ellipse cx="144" cy="206" rx="6" ry="2.5" fill="#fffae8" stroke="#c8a830" stroke-width="1" transform="rotate(6 144 206)"/>
-                    <ellipse cx="160" cy="210" rx="6" ry="2.5" fill="#fffae8" stroke="#c8a830" stroke-width="1" transform="rotate(-14 160 210)"/>
-
-                    <!-- Saffron strands -->
-                    <path d="M 90,205 C 92,199 96,196 94,191" stroke="#E8AC3A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-                    <path d="M 97,203 C 99,197 103,194 101,189" stroke="#E8AC3A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-                    <path d="M 122,203 C 124,197 126,194 124,190" stroke="#E8AC3A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-                    <path d="M 130,205 C 132,199 134,197 132,192" stroke="#E8AC3A" stroke-width="2" stroke-linecap="round" fill="none"/>
-
-                    <!-- Fried onion & herb garnish -->
-                    <circle cx="108" cy="202" r="4" fill="#c87020" stroke="#8B4010" stroke-width="1.2"/>
-                    <circle cx="118" cy="200" r="3.5" fill="#c87020" stroke="#8B4010" stroke-width="1"/>
-                    <circle cx="136" cy="203" r="4" fill="#8B2000" stroke="#5a1000" stroke-width="1.2"/>
-                    <circle cx="104" cy="199" r="3" fill="#346018" stroke="#1e3a0a" stroke-width="1"/>
-                    <circle cx="126" cy="201" r="3" fill="#346018" stroke="#1e3a0a" stroke-width="1"/>
-
-                    <!-- 4-point star sparkle left -->
-                    <g transform="translate(18,200)">
-                        <line x1="0" y1="-12" x2="0" y2="12" stroke="#E8AC3A" stroke-width="3"/>
-                        <line x1="-12" y1="0" x2="12" y2="0" stroke="#E8AC3A" stroke-width="3"/>
-                        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#E8AC3A" stroke-width="2"/>
-                        <line x1="8" y1="-8" x2="-8" y2="8" stroke="#E8AC3A" stroke-width="2"/>
-                        <circle cx="0" cy="0" r="4" fill="#E8AC3A"/>
-                    </g>
-                    <!-- Smaller sparkle right -->
-                    <g transform="translate(212,240) scale(0.65)">
-                        <line x1="0" y1="-12" x2="0" y2="12" stroke="#460000" stroke-width="3"/>
-                        <line x1="-12" y1="0" x2="12" y2="0" stroke="#460000" stroke-width="3"/>
-                        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#460000" stroke-width="2"/>
-                        <line x1="8" y1="-8" x2="-8" y2="8" stroke="#460000" stroke-width="2"/>
-                        <circle cx="0" cy="0" r="4" fill="#460000"/>
-                    </g>
-                    <!-- Floating spice shapes -->
-                    <polygon points="26,160 31,150 36,160 31,170" fill="#E8AC3A" stroke="#2A1010" stroke-width="1.5"/>
-                    <circle cx="215" cy="182" r="7" fill="#460000" stroke="#2A1010" stroke-width="2"/>
-                    <circle cx="213" cy="179" r="2.5" fill="rgba(255,255,255,0.42)"/>
-                    <!-- Tiny dot accent -->
-                    <circle cx="22" cy="230" r="4" fill="#E8AC3A" stroke="#2A1010" stroke-width="1.5"/>
-                    <circle cx="200" cy="200" r="5" fill="#E8F5E2" stroke="#2A1010" stroke-width="1.5"/>
-                </svg>
-            </div>
-
+    <!-- Mobile Drawer & Backdrop -->
+    <div class="mobile-nav-backdrop"></div>
+    <aside class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div style="margin-top: 36px;">
+            <a href="contact.html" class="btn btn-primary btn-pill" style="width: 100%;">Plan Your Event</a>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 20px; text-align: center;">
+                Chathanadu, Alappuzha, Kerala<br>Tel: +91 90378 88910
+            </p>
         </div>
-    </section>
+    </aside>
 
-    <!-- Wavy Transition: Cream to Yellow Marquee -->
-    <svg viewBox="0 0 1440 40" preserveAspectRatio="none" style="display:block; width:100%; height:40px; background-color: var(--cream-bg);">
-        <path fill="var(--brand-yellow)" d="M0,20 C150,40 350,0 500,20 C650,40 850,0 1000,20 C1150,40 1350,0 1440,20 L1440,40 L0,40 Z"></path>
-    </svg>
+    <!-- New Model Framed Video Hero Landing with Ambient Shaded Elegance & Key Metrics -->
+    <section class="hero-framed-section" id="heroLanding" aria-label="Afsal Caterers &amp; Events">
+        <!-- Ambient Luxury Shady Gradients & Mesh Glow -->
+        <div class="hero-ambient-glow glow-1"></div>
+        <div class="hero-ambient-glow glow-2"></div>
+        <div class="hero-ambient-grid-pattern"></div>
 
-    <!-- Marquee Banner (Yellowish background) -->
-    <div class="marquee-wrapper" style="background-color: var(--brand-yellow);">
-        <div class="marquee">
-            <div class="marquee-content text-dark">
-                <span>Your perfect catering moment awaits</span>
-                <span class="icon-spacer">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                </span>
-                <span>Experience the Difference</span>
-                <span class="icon-spacer">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h8"/></svg>
-                </span>
-                <span>100% Quality Ingredients</span>
-                <span class="icon-spacer">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                </span>
-                
-                <!-- Repeat for infinite scroll -->
-                <span>Your perfect catering moment awaits</span>
-                <span class="icon-spacer">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                </span>
-                <span>Experience the Difference</span>
-                <span class="icon-spacer">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h8"/></svg>
-                </span>
-                <span>100% Quality Ingredients</span>
-                <span class="icon-spacer">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                </span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Wavy Transition: Yellow Marquee to White -->
-    <svg viewBox="0 0 1440 40" preserveAspectRatio="none" style="display:block; width:100%; height:40px; background-color: var(--brand-yellow);">
-        <path fill="var(--white-bg)" d="M0,20 C150,40 350,0 500,20 C650,40 850,0 1000,20 C1150,40 1350,0 1440,20 L1440,40 L0,40 Z"></path>
-    </svg>
-
-    <!-- Services Cards Section -->
-    <section class="services-section bg-white" id="services">
-        <div class="services-container">
-            <div class="services-grid">
-                
-                <!-- Card 1 -->
-                <div class="service-col">
-                    <h3 class="service-heading text-dark" style="margin-bottom: 15px;">Catering</h3>
-                    <div class="service-img-wrapper border-thick radius-12" style="margin-bottom: 20px;">
-                        <img src="images/SaveInta.com_660824234_18318703762252472_6239962177027939136_n.jpg" alt="Catering">
-                    </div>
-                    <p style="font-size: 1.1rem; line-height: 1.5; color: #555;">Whether you're hosting an intimate gathering or a grand feast, come and share the joy of exquisite culinary delights with us.</p>
-                    <a href="gallery.html" class="btn-text" style="display:inline-block; font-weight: 100; font-family: var(--font-heading); font-size: 1rem; color: var(--brand-red); text-decoration: none; margin-top: 10px;">View more &rarr;</a>
+        <div class="container hero-framed-container">
+            <!-- Minimal Elegant Brand Title & Badge -->
+            <div class="hero-header-minimal">
+                <div class="hero-prestige-badge">
+                    <span class="badge-dot-live"></span>
+                    <span><span class="brand-highlight">Afsal Caterers &amp; Events</span> &bull; Est. 2000</span>
                 </div>
-
-                <!-- Card 2 -->
-                <div class="service-col">
-                    <h3 class="service-heading text-dark" style="margin-bottom: 15px;">Stage Decoration</h3>
-                    <div class="service-img-wrapper border-thick radius-12" style="margin-bottom: 20px;">
-                        <img src="images/SaveInta.com_524224434_18356583739154385_6832722676717998445_n.jpg" alt="Decoration">
-                    </div>
-                    <p style="font-size: 1.1rem; line-height: 1.5; color: #555;">We feature premium floral arrangements and elegant designs, creating a lively atmosphere for your special day.</p>
-                    <a href="gallery.html" class="btn-text" style="display:inline-block; font-weight: 100; font-family: var(--font-heading); font-size: 1rem; color: var(--brand-red); text-decoration: none; margin-top: 10px;">View more &rarr;</a>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="service-col">
-                    <h3 class="service-heading text-dark" style="margin-bottom: 15px;">Event Management</h3>
-                    <div class="service-img-wrapper border-thick radius-12" style="margin-bottom: 20px;">
-                        <img src="images/SaveInta.com_767703128_18409958287154385_2093238272064119401_n.jpg" alt="Event Services">
-                    </div>
-                    <p style="font-size: 1.1rem; line-height: 1.5; color: #555;">Afsel Caterers is the perfect venue for your private events and celebrations, handling every detail flawlessly.</p>
-                    <a href="gallery.html" class="btn-text" style="display:inline-block; font-weight: 100; font-family: var(--font-heading); font-size: 1rem; color: var(--brand-red); text-decoration: none; margin-top: 10px;">View more &rarr;</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Wavy Transition: White to Cream -->
-    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block; width:100%; height:60px; background-color: var(--white-bg);">
-        <path fill="var(--cream-bg)" d="M0,30 C150,60 350,0 500,30 C650,60 850,0 1000,30 C1150,60 1350,0 1440,30 L1440,60 L0,60 Z"></path>
-    </svg>
-
-    <!-- Menu Section -->
-    <section class="menu-highlights-section bg-cream" id="menu">
-        <div class="services-container" style="padding: 60px 0 50px;">
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 50px;">
-                <div>
-                    <h2 class="section-title text-dark">Our Signature Menu</h2>
-                    <p class="section-desc" style="max-width: 500px; margin: 0;">Explore our most loved culinary categories — crafted with passion.</p>
-                </div>
-                <a href="menu.html" class="btn btn-pill-solid">View full menu</a>
             </div>
 
-            <!-- 6 Category Cards -->
-            <div class="menu-cat-grid">
-                <!-- Biriyani -->
-                <a href="menu.html#biriyani" class="menu-cat-card">
-                    <div class="menu-cat-img-wrap">
-                        <img src="images/menu_biriyani.jpg" alt="Biriyani" class="menu-cat-img">
-                    </div>
-                    <span class="menu-cat-label">Biriyani</span>
-                </a>
-                <!-- Sadhya -->
-                <a href="menu.html#sadhya" class="menu-cat-card">
-                    <div class="menu-cat-img-wrap">
-                        <img src="images/menu_sadhya.jpg" alt="Sadhya" class="menu-cat-img">
-                    </div>
-                    <span class="menu-cat-label">Sadhya</span>
-                </a>
-                <!-- Desserts -->
-                <a href="menu.html#desserts" class="menu-cat-card">
-                    <div class="menu-cat-img-wrap">
-                        <img src="images/menu_desserts.jpg" alt="Desserts" class="menu-cat-img">
-                    </div>
-                    <span class="menu-cat-label">Desserts</span>
-                </a>
-                <!-- Snacks -->
-                <a href="menu.html#snacks" class="menu-cat-card">
-                    <div class="menu-cat-img-wrap">
-                        <img src="images/menu_snacks.jpg" alt="Snacks" class="menu-cat-img">
-                    </div>
-                    <span class="menu-cat-label">Snacks</span>
-                </a>
-                <!-- Tea -->
-                <a href="menu.html#tea" class="menu-cat-card">
-                    <div class="menu-cat-img-wrap">
-                        <img src="images/menu_tea.jpg" alt="Tea" class="menu-cat-img">
-                    </div>
-                    <span class="menu-cat-label">Tea</span>
-                </a>
-                <!-- Juices -->
-                <a href="menu.html#juices" class="menu-cat-card">
-                    <div class="menu-cat-img-wrap">
-                        <img src="images/menu_juices.jpg" alt="Juices" class="menu-cat-img">
-                    </div>
-                    <span class="menu-cat-label">Juices</span>
-                </a>
-            </div>
-        </div>
-    </section>
+            <!-- Framed Luxury Cinematic Video Showcase with Efficient Margins -->
+            <div class="hero-video-frame-wrap">
+                <div class="hero-video-frame-inner">
+                    <!-- 4K Event Video -->
+                    <video id="heroBgVideo" class="hero-frame-video" autoplay muted loop playsinline poster="images/event-5.jpg" title="Afsal Caterers Event Production Cinema">
+                        <source src="images/Video-afsalcaters.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
 
-    <!-- Wavy Transition: Cream to White -->
-    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block; width:100%; height:60px; background-color: var(--cream-bg);">
-        <path fill="var(--white-bg)" d="M0,30 C150,60 350,0 500,30 C650,60 850,0 1000,30 C1150,60 1350,0 1440,30 L1440,60 L0,60 Z"></path>
-    </svg>
+                    <!-- Cinematic Vignette & Edge Scrim -->
+                    <div class="video-frame-scrim"></div>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section bg-white">
-        <div class="test-container">
-            <div class="test-header">
-                <h2 class="section-title text-dark">What our guests have to say</h2>
-                <p class="section-desc">We take great pride in providing a welcoming atmosphere, exceptional service, and top-notch catering and decorations.</p>
-            </div>
-             <div class="test-marquee-container">
-                <!-- Row 1: Left Scroll -->
-                <div class="test-marquee-row scroll-left">
-                    <div class="test-marquee-content">
-                        <!-- Group 1 -->
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"The catering here is some of the best I've ever experienced. Highly recommended for weddings!"</p>
-                            <p class="test-author">- Sarah J.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"The staff makes all the difference. Friendly, professional, and attentive to every detail."</p>
-                            <p class="test-author">- Michael T.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"If you want elegant stage decoration, this is the place. Absolutely stunning work."</p>
-                            <p class="test-author">- Emma W.</p>
-                        </div>
-                        <!-- Group 2 -->
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"The catering here is some of the best I've ever experienced. Highly recommended for weddings!"</p>
-                            <p class="test-author">- Sarah J.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"The staff makes all the difference. Friendly, professional, and attentive to every detail."</p>
-                            <p class="test-author">- Michael T.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"If you want elegant stage decoration, this is the place. Absolutely stunning work."</p>
-                            <p class="test-author">- Emma W.</p>
-                        </div>
-                        <!-- Group 3 -->
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"The catering here is some of the best I've ever experienced. Highly recommended for weddings!"</p>
-                            <p class="test-author">- Sarah J.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"The staff makes all the difference. Friendly, professional, and attentive to every detail."</p>
-                            <p class="test-author">- Michael T.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"If you want elegant stage decoration, this is the place. Absolutely stunning work."</p>
-                            <p class="test-author">- Emma W.</p>
-                        </div>
+                    <!-- Floating Frame Badges -->
+                    <div class="frame-tag-badge top-left">
+                        <span class="tag-pulse-red"></span>
+                        <span>Statewide Event Production</span>
                     </div>
+
+                    <div class="frame-tag-badge top-right">
+                        <span>⭐ 4.9/5 Rating &bull; 2,500+ Banquets</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Key Numbers & Proof Metrics Bar (Proper Metrics) -->
+            <div class="hero-metrics-bar">
+                <div class="metric-card">
+                    <div class="metric-number-row">
+                        <span class="metric-number">24</span>
+                        <span class="metric-plus">+</span>
+                    </div>
+                    <div class="metric-title">Years of Heritage</div>
+                    <div class="metric-sub">Est. 2000 &bull; Alappuzha, Kerala</div>
                 </div>
 
-                <!-- Row 2: Right Scroll -->
-                <div class="test-marquee-row scroll-right mt-30">
-                    <div class="test-marquee-content">
-                        <!-- Group 1 -->
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"Amazing setup! The food was delicious and the ambiance was perfect for our anniversary."</p>
-                            <p class="test-author">- John D.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"They managed our corporate event flawlessly. Will definitely hire them again!"</p>
-                            <p class="test-author">- Rachel K.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"From the decor to the desserts, everything was 10/10. Thank you Afsel Caterers!"</p>
-                            <p class="test-author">- David L.</p>
-                        </div>
-                        <!-- Group 2 -->
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"Amazing setup! The food was delicious and the ambiance was perfect for our anniversary."</p>
-                            <p class="test-author">- John D.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"They managed our corporate event flawlessly. Will definitely hire them again!"</p>
-                            <p class="test-author">- Rachel K.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"From the decor to the desserts, everything was 10/10. Thank you Afsel Caterers!"</p>
-                            <p class="test-author">- David L.</p>
-                        </div>
-                        <!-- Group 3 -->
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"Amazing setup! The food was delicious and the ambiance was perfect for our anniversary."</p>
-                            <p class="test-author">- John D.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"They managed our corporate event flawlessly. Will definitely hire them again!"</p>
-                            <p class="test-author">- Rachel K.</p>
-                        </div>
-                        <div class="test-card bg-transparent border-thick radius-12">
-                            <div class="stars text-dark">★★★★★</div>
-                            <p class="test-text">"From the decor to the desserts, everything was 10/10. Thank you Afsel Caterers!"</p>
-                            <p class="test-author">- David L.</p>
-                        </div>
+                <div class="metric-divider"></div>
+
+                <div class="metric-card">
+                    <div class="metric-number-row">
+                        <span class="metric-number">2,500</span>
+                        <span class="metric-plus">+</span>
                     </div>
+                    <div class="metric-title">Successful Events</div>
+                    <div class="metric-sub">Weddings &amp; celebrations</div>
+                </div>
+
+                <div class="metric-divider"></div>
+
+                <div class="metric-card">
+                    <div class="metric-number-row">
+                        <span class="metric-number">5,000</span>
+                        <span class="metric-plus">+</span>
+                    </div>
+                    <div class="metric-title">Guest Capacity</div>
+                    <div class="metric-sub">Hot &amp; fresh catering capacity</div>
+                </div>
+
+                <div class="metric-divider"></div>
+
+                <div class="metric-card">
+                    <div class="metric-number-row">
+                        <span class="metric-number">14</span>
+                        <span class="metric-plus">/14</span>
+                    </div>
+                    <div class="metric-title">Kerala Districts</div>
+                    <div class="metric-sub">Event service anywhere in Kerala</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Wavy Transition: White to Cream -->
-    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block; width:100%; height:60px; background-color: var(--white-bg);">
-        <path fill="var(--cream-bg)" d="M0,30 C150,60 350,0 500,30 C650,60 850,0 1000,30 C1150,60 1350,0 1440,30 L1440,60 L0,60 Z"></path>
-    </svg>
-
-    <!-- Contact Section (Book an event) -->
-    <section class="contact-section bg-cream" id="contact">
-        <div class="container">
-            <h1 class="section-title text-center text-dark" style="font-size: 5rem; margin-bottom: 50px;">Enquiry</h1>
-            <div class="contact-block max-w-800 mx-auto">
-                <form id="enquiryForm" class="styled-form-grid">
-                    <div class="form-row">
-                        <input type="text" id="date" placeholder="Date (dd/mm/yyyy)" class="bg-white border-thick radius-12" required>
-                        <input type="text" id="time" placeholder="Time (hh/mm)" class="bg-white border-thick radius-12" required>
-                    </div>
-                    <div class="form-row">
-                        <input type="text" id="person" placeholder="Person" class="bg-white border-thick radius-12" required>
-                        <input type="text" id="name" placeholder="Name" class="bg-white border-thick radius-12" required>
-                    </div>
-                    <div class="form-row">
-                        <input type="email" id="email" placeholder="Email" class="bg-white border-thick radius-12" required>
-                        <input type="tel" id="phone" placeholder="Phone" class="bg-white border-thick radius-12" required>
-                    </div>
-                    <div class="form-row-full">
-                        <textarea id="message" placeholder="Message" rows="6" class="bg-white border-thick radius-12"></textarea>
-                    </div>
-                    <div class="form-row-full text-center mt-30">
-                        <button type="submit" class="btn btn-pill-solid text-white bg-dark btn-large" style="padding: 16px 48px; font-size: 1.2rem;">Submit Enquiry</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer-dark bg-dark text-white">
-        <!-- Wavy Transition: Cream to Dark Footer -->
-        <svg class="wave-footer" viewBox="0 0 1440 60" preserveAspectRatio="none" style="background-color: var(--cream-bg);">
-            <path fill="var(--brand-dark)" d="M0,60 C150,0 350,60 500,30 C650,0 850,60 1000,30 C1150,0 1350,60 1440,30 L1440,60 L0,60 Z"></path>
-        </svg>
-
-        <div class="container footer-container">
-            <div class="footer-left">
-                <h2 class="footer-title">Stay in the loop with<br>Afsel Caterers</h2>
-                <form class="footer-newsletter">
-                    <input type="email" placeholder="Enter your email" class="border-thick radius-50 bg-white text-dark">
-                    <button type="submit" class="btn-circle bg-yellow border-thick text-dark">→</button>
-                </form>
-                <div class="footer-contact-info mt-30">
-                    <p>+015982694756</p>
-                    <p>info@example.com</p>
-                </div>
-            </div>
-            
-            <div class="footer-links">
-                <div class="link-column">
-                    <h4>Page Links</h4>
-                    <a href="index.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">About</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="link-column">
-                    <h4>Utility Links</h4>
-                    <a href="#">Style Guide</a>
-                    <a href="#">Instructions</a>
-                    <a href="#">Licenses</a>
-                    <a href="#">Changelog</a>
-                </div>
-            </div>
-            
-            <div class="footer-card bg-cream border-thick radius-12 text-center text-dark">
-                <h3>Our location</h3>
-                <p>123 Event Street<br>Cateringville, CA 90210</p>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 15px auto;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                <h3>Opening hours</h3>
-                <p>Monday - Friday: 7:00 AM - 8:00 PM<br>Saturday - Sunday: 8:00 AM - 6:00 PM</p>
-                <a href="#contact" class="btn btn-pill-solid bg-yellow text-dark mt-30">View all locations</a>
-            </div>
+    <!-- Proud Clients Marquee Section (Continuous Smooth Loop) -->
+    <section class="marquee-section" aria-label="Our Esteemed Clients">
+        <div class="marquee-header">
+            <h2 class="marquee-subtitle">Trusted by Kerala's Foremost Institutions &bull; <span>Proud Clients (2023 &ndash; 2024)</span></h2>
         </div>
         
-        <div class="footer-bottom-bar container">
-            <p>Designed by Afsel, Powered by Webflow</p>
-            <div class="footer-socials">
-                <a href="#">FB</a>
-                <a href="#">IG</a>
-                <a href="#">X</a>
+        <div class="marquee-container">
+            <!-- Track 1 -->
+            <div class="marquee-track">
+                <!-- 1. Muthoot Finance -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="4" fill="#D91B24"/><circle cx="18" cy="18" r="10" fill="#FFFFFF"/><path d="M12 23V14L18 20L24 14V23" stroke="#D91B24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Muthoot Finance</h4>
+                        <p>Corporate Partner</p>
+                    </div>
+                </div>
+
+                <!-- 2. India Post -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="4" fill="#D91B24"/><path d="M8 22L20 14L28 17L18 26L8 22Z" fill="#FACC15"/><circle cx="25" cy="13" r="2.5" fill="#FACC15"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>India Post (भारतीय डाक)</h4>
+                        <p>Government of India</p>
+                    </div>
+                </div>
+
+                <!-- 3. Kerala Police -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" stroke="#111827" stroke-width="2" fill="#F3F4F6"/><path d="M18 7L24 11V18C24 22 18 25 18 25C18 25 12 22 12 18V11L18 7Z" fill="#D91B24"/><path d="M18 12V19M15 15H21" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Kerala Police</h4>
+                        <p>State Department Events</p>
+                    </div>
+                </div>
+
+                <!-- 4. KSFE -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="4" fill="#1E3A8A"/><polygon points="8,18 18,8 28,18 18,28" fill="#10B981"/><circle cx="18" cy="18" r="4" fill="#FFFFFF"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>KSFE (വളരണം വാണോളം)</h4>
+                        <p>State Financial Enterprise</p>
+                    </div>
+                </div>
+
+                <!-- 5. District Bar Association -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#111827"/><path d="M18 9V27M12 14L18 12L24 14M10 18L14 18M22 18L26 18" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>District Bar Association</h4>
+                        <p>Alappuzha Advocates</p>
+                    </div>
+                </div>
+
+                <!-- 6. TD Vandanam Medical College -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" stroke="#D91B24" stroke-width="2" fill="#FFFFFF"/><path d="M18 8V28M13 14C15 12 21 12 23 15C25 18 16 20 18 24" stroke="#111827" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>TD Vandanam Medical College</h4>
+                        <p>Alumni &amp; Faculty Galas</p>
+                    </div>
+                </div>
+
+                <!-- 7. Income Tax Department -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#F8FAFC" stroke="#059669" stroke-width="2"/><path d="M18 9V17M15 12H21M13 22C15 24 21 24 23 22" stroke="#059669" stroke-width="2" stroke-linecap="round"/><path d="M11 26H25" stroke="#D91B24" stroke-width="2.5"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Income Tax Department</h4>
+                        <p>Government of India</p>
+                    </div>
+                </div>
+
+                <!-- 8. KMSRA -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#D91B24"/><path d="M14 24V16C14 14 17 14 18 15C19 14 22 14 22 16V24" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><rect x="13" y="24" width="10" height="4" rx="1" fill="#FFFFFF"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>KMSRA</h4>
+                        <p>Kerala Medical Assoc.</p>
+                    </div>
+                </div>
+
+                <!-- 9. Leo XIII HSS School -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><path d="M8 8H28V20C28 26 18 30 18 30C18 30 8 26 8 20V8Z" fill="#111827"/><path d="M18 12L21 18H15L18 12Z" fill="#D91B24"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Leo XIII HSS School</h4>
+                        <p>Nirakkoottu Programme</p>
+                    </div>
+                </div>
+
+                <!-- 10. JSS Gouriyamma Programme -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="4" fill="#D91B24"/><polygon points="18,10 20,15 26,15 21,18 23,24 18,20 13,24 15,18 10,15 16,15" fill="#FFFFFF"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>JSS Gouriyamma Programme</h4>
+                        <p>State Commemoration</p>
+                    </div>
+                </div>
+
+                <!-- 11. IAPA -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/><path d="M18 6C11 6 11 18 18 18C25 18 25 30 18 30" stroke="#16A34A" stroke-width="2"/><circle cx="18" cy="12" r="2" fill="#16A34A"/><circle cx="18" cy="24" r="2" fill="#D91B24"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Indian Acupuncture Assoc.</h4>
+                        <p>National Conference</p>
+                    </div>
+                </div>
+
+                <!-- 12. AJMAL Welmade Foods -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#111827"/><text x="18" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="bold" fill="#D91B24" text-anchor="middle">A</text></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>AJMAL Welmade Foods</h4>
+                        <p>Industry Partner</p>
+                    </div>
+                </div>
             </div>
-            <p>Privacy Policy</p>
+
+            <!-- Track 2 (Duplicate for Seamless Infinite Loop) -->
+            <div class="marquee-track" aria-hidden="true">
+                <!-- 1. Muthoot Finance -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="4" fill="#D91B24"/><circle cx="18" cy="18" r="10" fill="#FFFFFF"/><path d="M12 23V14L18 20L24 14V23" stroke="#D91B24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Muthoot Finance</h4>
+                        <p>Corporate Partner</p>
+                    </div>
+                </div>
+
+                <!-- 2. India Post -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="4" fill="#D91B24"/><path d="M8 22L20 14L28 17L18 26L8 22Z" fill="#FACC15"/><circle cx="25" cy="13" r="2.5" fill="#FACC15"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>India Post (भारतीय डाक)</h4>
+                        <p>Government of India</p>
+                    </div>
+                </div>
+
+                <!-- 3. Kerala Police -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" stroke="#111827" stroke-width="2" fill="#F3F4F6"/><path d="M18 7L24 11V18C24 22 18 25 18 25C18 25 12 22 12 18V11L18 7Z" fill="#D91B24"/><path d="M18 12V19M15 15H21" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Kerala Police</h4>
+                        <p>State Department Events</p>
+                    </div>
+                </div>
+
+                <!-- 4. KSFE -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="4" fill="#1E3A8A"/><polygon points="8,18 18,8 28,18 18,28" fill="#10B981"/><circle cx="18" cy="18" r="4" fill="#FFFFFF"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>KSFE (വളരണം വാണോളം)</h4>
+                        <p>State Financial Enterprise</p>
+                    </div>
+                </div>
+
+                <!-- 5. District Bar Association -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#111827"/><path d="M18 9V27M12 14L18 12L24 14M10 18L14 18M22 18L26 18" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>District Bar Association</h4>
+                        <p>Alappuzha Advocates</p>
+                    </div>
+                </div>
+
+                <!-- 6. TD Vandanam Medical College -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" stroke="#D91B24" stroke-width="2" fill="#FFFFFF"/><path d="M18 8V28M13 14C15 12 21 12 23 15C25 18 16 20 18 24" stroke="#111827" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>TD Vandanam Medical College</h4>
+                        <p>Alumni &amp; Faculty Galas</p>
+                    </div>
+                </div>
+
+                <!-- 7. Income Tax Department -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#F8FAFC" stroke="#059669" stroke-width="2"/><path d="M18 9V17M15 12H21M13 22C15 24 21 24 23 22" stroke="#059669" stroke-width="2" stroke-linecap="round"/><path d="M11 26H25" stroke="#D91B24" stroke-width="2.5"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Income Tax Department</h4>
+                        <p>Government of India</p>
+                    </div>
+                </div>
+
+                <!-- 8. KMSRA -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#D91B24"/><path d="M14 24V16C14 14 17 14 18 15C19 14 22 14 22 16V24" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><rect x="13" y="24" width="10" height="4" rx="1" fill="#FFFFFF"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>KMSRA</h4>
+                        <p>Kerala Medical Assoc.</p>
+                    </div>
+                </div>
+
+                <!-- 9. Leo XIII HSS School -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><path d="M8 8H28V20C28 26 18 30 18 30C18 30 8 26 8 20V8Z" fill="#111827"/><path d="M18 12L21 18H15L18 12Z" fill="#D91B24"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Leo XIII HSS School</h4>
+                        <p>Nirakkoottu Programme</p>
+                    </div>
+                </div>
+
+                <!-- 10. JSS Gouriyamma Programme -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="4" fill="#D91B24"/><polygon points="18,10 20,15 26,15 21,18 23,24 18,20 13,24 15,18 10,15 16,15" fill="#FFFFFF"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>JSS Gouriyamma Programme</h4>
+                        <p>State Commemoration</p>
+                    </div>
+                </div>
+
+                <!-- 11. IAPA -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/><path d="M18 6C11 6 11 18 18 18C25 18 25 30 18 30" stroke="#16A34A" stroke-width="2"/><circle cx="18" cy="12" r="2" fill="#16A34A"/><circle cx="18" cy="24" r="2" fill="#D91B24"/></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>Indian Acupuncture Assoc.</h4>
+                        <p>National Conference</p>
+                    </div>
+                </div>
+
+                <!-- 12. AJMAL Welmade Foods -->
+                <div class="client-badge-card">
+                    <div class="client-badge-icon">
+                        <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#111827"/><text x="18" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="bold" fill="#D91B24" text-anchor="middle">A</text></svg>
+                    </div>
+                    <div class="client-badge-info">
+                        <h4>AJMAL Welmade Foods</h4>
+                        <p>Industry Partner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Highlight Section (Prominent Large Showcase & Clean Typography) -->
+    <section class="about-preview-section">
+        <div class="container about-preview-grid">
+            <!-- Large Showcase Photo with Ambient Badge -->
+            <div class="about-showcase-media">
+                <div class="about-main-img-card">
+                    <img src="images/event-7.jpg" alt="Afsal Caterers Grand Stage &amp; Banquet Decor" class="about-feature-img" loading="lazy">
+                    <div class="about-img-badge">
+                        <span class="badge-dot-live"></span>
+                        <span>Catering &amp; Event Services Across Kerala</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Text -->
+            <div class="about-content">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">Delicious Food &amp; Complete Event Management</h2>
+                <p class="about-lead-text">
+                    Launched in 2000, Afsal Caterers was founded by Mr. Ashker C.H., who gained extensive experience by working with various leading catering companies. Afsal Caterers is renowned for high quality, excellent customer relations, and professional service across Kerala.
+                </p>
+                <p class="about-sub-text">
+                    With a wide range of choices, Afsal Caterers &amp; Events offers customisable menus ranging from themed to traditional concepts &mdash; Regional, North &amp; South Indian, Chinese, Arabian, and more.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Services Showcase -->
+    <section class="bento-services-section" id="servicesShowcase">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our Event &amp; Catering Services</h2>
+                <p class="section-desc">From delicious catering for 5,000+ guests to beautiful stage setups, German tents, and sound &amp; lighting across Kerala.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- 01: Multi-Cuisine Catering (Span 7) -->
+                <a href="services.html#catering" class="bento-card span-7">
+                    <img src="images/event-6.jpg" alt="Kerala Banquet Catering" class="bento-card-bg-img" loading="lazy">
+                    <div class="bento-card-scrim"></div>
+                    <div class="bento-card-top">
+                        <span class="bento-number">01</span>
+                        <span class="bento-badge-pill">Catering</span>
+                    </div>
+                    <div class="bento-card-body">
+                        <h3 class="bento-card-title">Multi-Cuisine Catering &amp; Live Food Counters</h3>
+                        <div class="bento-feature-pills">
+                            <span class="bento-pill">Kerala Sadhya &amp; Biriyani</span>
+                            <span class="bento-pill">Live Food Counters</span>
+                            <span class="bento-pill">Up to 5,000+ Guests</span>
+                        </div>
+                        <div class="bento-card-link-row">
+                            <span>View Menus</span>
+                            <div class="bento-arrow-circle">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 02: Stage Decoration & Mandaps (Span 5) -->
+                <a href="services.html#stage-decor" class="bento-card span-5">
+                    <img src="images/event-7.jpg" alt="Wedding Stage Decoration" class="bento-card-bg-img" loading="lazy">
+                    <div class="bento-card-scrim"></div>
+                    <div class="bento-card-top">
+                        <span class="bento-number">02</span>
+                        <span class="bento-badge-pill">Stage Decor</span>
+                    </div>
+                    <div class="bento-card-body">
+                        <h3 class="bento-card-title">Wedding Stage Decoration &amp; Mandaps</h3>
+                        <div class="bento-feature-pills">
+                            <span class="bento-pill">Fresh Floral Stages</span>
+                            <span class="bento-pill">Modern Stage Designs</span>
+                        </div>
+                        <div class="bento-card-link-row">
+                            <span>View Stage Photos</span>
+                            <div class="bento-arrow-circle">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 03: Sound & Lights (Span 4) -->
+                <a href="services.html#light-sound" class="bento-card span-4">
+                    <img src="images/event-5.jpg" alt="Sound Systems and Stage Lighting" class="bento-card-bg-img" loading="lazy">
+                    <div class="bento-card-scrim"></div>
+                    <div class="bento-card-top">
+                        <span class="bento-number">03</span>
+                        <span class="bento-badge-pill">Sound &amp; Light</span>
+                    </div>
+                    <div class="bento-card-body">
+                        <h3 class="bento-card-title">Sound Systems &amp; Stage Lighting</h3>
+                        <div class="bento-feature-pills">
+                            <span class="bento-pill">Clear Audio Systems</span>
+                            <span class="bento-pill">Stage &amp; Mood Lights</span>
+                        </div>
+                        <div class="bento-card-link-row">
+                            <span>Sound &amp; Lighting</span>
+                            <div class="bento-arrow-circle">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 04: German Tents (Span 4) -->
+                <a href="services.html#tents" class="bento-card span-4">
+                    <img src="images/event-3.jpg" alt="German Tents and Pagodas" class="bento-card-bg-img" loading="lazy">
+                    <div class="bento-card-scrim"></div>
+                    <div class="bento-card-top">
+                        <span class="bento-number">04</span>
+                        <span class="bento-badge-pill">Tents &amp; Panthal</span>
+                    </div>
+                    <div class="bento-card-body">
+                        <h3 class="bento-card-title">German Tents &amp; Pagoda Tents</h3>
+                        <div class="bento-feature-pills">
+                            <span class="bento-pill">Rain &amp; Weather Proof</span>
+                            <span class="bento-pill">AC Tents Available</span>
+                        </div>
+                        <div class="bento-card-link-row">
+                            <span>View Tents</span>
+                            <div class="bento-arrow-circle">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 05: Photography & Video (Span 4) -->
+                <a href="services.html#photography" class="bento-card span-4">
+                    <img src="images/event-14.jpg" alt="Photography and Video Coverage" class="bento-card-bg-img" loading="lazy">
+                    <div class="bento-card-scrim"></div>
+                    <div class="bento-card-top">
+                        <span class="bento-number">05</span>
+                        <span class="bento-badge-pill">Photo &amp; Video</span>
+                    </div>
+                    <div class="bento-card-body">
+                        <h3 class="bento-card-title">Photography, Video &amp; LED Screens</h3>
+                        <div class="bento-feature-pills">
+                            <span class="bento-pill">Wedding Photo &amp; Video</span>
+                            <span class="bento-pill">Outdoor LED Screens</span>
+                        </div>
+                        <div class="bento-card-link-row">
+                            <span>View Photo &amp; Video</span>
+                            <div class="bento-arrow-circle">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Full Capability Banner Strip -->
+            <div class="services-more-banner" style="margin-top: 40px;">
+                <div class="services-more-info">
+                    <h4>Complete Event Support: Tents, Tables, Chairs &amp; Music</h4>
+                    <p>We own our own tents, audio gear, and catering equipment for smooth event execution anywhere in Kerala.</p>
+                </div>
+                <a href="services.html" class="btn btn-primary">View All Event Services &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Afsal Event Production Standards Strip -->
+    <section class="section-padding" style="background: var(--bg-subtle); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+        <div class="container">
+            <div class="cinema-meta-strip" style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-md); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+                <div class="cinema-feature-col">
+                    <div class="cinema-feature-icon" style="background: var(--brand-red-subtle); border-color: var(--brand-red-border); color: var(--brand-red);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="cinema-feature-text">
+                        <h5 style="color: var(--text-main);">Our Own Equipment &amp; Team</h5>
+                        <p style="color: var(--text-muted);">Direct tents, sound systems, and dedicated cooking staff</p>
+                    </div>
+                </div>
+                <div class="cinema-feature-col">
+                    <div class="cinema-feature-icon" style="background: var(--brand-red-subtle); border-color: var(--brand-red-border); color: var(--brand-red);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <div class="cinema-feature-text">
+                        <h5 style="color: var(--text-main);">Fast &amp; Fresh Food Service</h5>
+                        <p style="color: var(--text-muted);">Hot, delicious meals served smoothly for up to 5,000+ guests</p>
+                    </div>
+                </div>
+                <div class="cinema-feature-col">
+                    <div class="cinema-feature-icon" style="background: var(--brand-red-subtle); border-color: var(--brand-red-border); color: var(--brand-red);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <div class="cinema-feature-text">
+                        <h5 style="color: var(--text-main);">All 14 Kerala Districts</h5>
+                        <p style="color: var(--text-muted);">Prompt setup and reliable service anywhere in Kerala</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 16px; margin-top: 36px; flex-wrap: wrap;">
+                <a href="gallery.html" class="btn btn-outline">View Real Event Photos &rarr;</a>
+                <a href="contact.html" class="btn btn-primary">Check Availability for Your Date</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Client Testimonials -->
+    <section class="section-padding bg-subtle" style="border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Client Reviews</span>
+                <h2 class="section-title">Words of Appreciation</h2>
+                <p class="section-desc">Read what our happy clients across Kerala say about our food and event services.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">
+                        &ldquo;Afsal Caterers managed our daughter's wedding reception in Alappuzha. The food was sensational &mdash; guests are still raving about the Biriyani and live fish counter. Mr. Ashker C.H. personally ensured every table was attended to with warmth.&rdquo;
+                    </p>
+                    <div class="testimonial-author-wrap">
+                        <div class="testimonial-avatar">SV</div>
+                        <div>
+                            <div class="testimonial-name">Shyju Varghese Pazhampally</div>
+                            <div class="testimonial-event-tag">Wedding Reception • Alappuzha</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">
+                        &ldquo;Flawless execution for our annual conference catering and stage setup. Dealing with 1,200+ attendees smoothly is no small feat. Afsal Caterers delivered with military precision and remarkable courtesy.&rdquo;
+                    </p>
+                    <div class="testimonial-author-wrap">
+                        <div class="testimonial-avatar">TD</div>
+                        <div>
+                            <div class="testimonial-name">TD Medical College Alumni Convenor</div>
+                            <div class="testimonial-event-tag">State Medical Conference Gala</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">
+                        &ldquo;The German tent structure and air-conditioning setup exceeded our expectations. The entire event was elegant, grand, and completely stress-free. Truly Kerala's top event management team.&rdquo;
+                    </p>
+                    <div class="testimonial-author-wrap">
+                        <div class="testimonial-avatar">KH</div>
+                        <div>
+                            <div class="testimonial-name">Adv. K. Harikumar</div>
+                            <div class="testimonial-event-tag">District Bar Association Annual Meet</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Footer -->
+    <footer class="site-footer-architectural">
+        <div class="footer-watermark" aria-hidden="true">AFSAL</div>
+        <div class="container footer-content-wrap">
+            <div class="footer-top-grid">
+                <!-- Col 1: Brand Info -->
+                <div class="footer-brand-col">
+                    <div class="footer-logo-row">
+                        <img src="afsal-logo.png" alt="Afsal Caterers &amp; Events Logo" class="footer-logo-img">
+                        <div>
+                            <div class="footer-brand-name">AFSAL CATERERS</div>
+                            <div class="footer-brand-tagline">&amp; EVENTS MANAGEMENT</div>
+                        </div>
+                    </div>
+                    <p class="footer-brand-desc">
+                        Founded in 2000 by Mr. Ashker C.H. in Alappuzha, Afsal Caterers is one of Kerala's most trusted catering and event management teams. Delivering quality food, beautiful stage decor, and reliable event arrangements across all 14 districts.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://www.facebook.com/afsalcateringalpy/" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/afsalcaterers/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://wa.me/919037888910?text=Hi%20there,%20for%20an%20enquiry%20regarding%20your%20event%20management%20and%20catering%20services." class="footer-social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.3-.778.98-.954 1.18-.175.2-.351.225-.652.075-.301-.15-1.272-.469-2.423-1.496-.895-.798-1.5-1.784-1.675-2.085-.175-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.151-.175.2-.301.301-.501.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.239-.244-.589-.493-.509-.678-.519l-.578-.01c-.2 0-.527.075-.803.376s-1.054 1.03-1.054 2.512c0 1.482 1.079 2.912 1.23 3.113.15.2 2.122 3.24 5.141 4.543.718.31 1.279.495 1.716.634.721.229 1.377.197 1.896.119.579-.087 1.78-.727 2.031-1.43.251-.703.251-1.305.176-1.43-.076-.126-.276-.201-.577-.351zM12.004 21.75c-1.748 0-3.461-.462-4.966-1.336l-.356-.207-3.691.968.985-3.598-.228-.363a9.718 9.718 0 0 1-1.498-5.172c0-5.385 4.381-9.768 9.764-9.768 2.608 0 5.06 1.017 6.905 2.862 1.845 1.845 2.861 4.296 2.86 6.904 0 5.387-4.381 9.77-9.775 9.77zm8.313-18.084A11.66 11.66 0 0 0 12.004.25C5.524.25.25 5.525.25 12.006c0 2.07.541 4.092 1.569 5.87L.25 23.75l6.022-1.58a11.72 11.72 0 0 0 5.732 1.488h.005c6.48 0 11.754-5.275 11.755-11.758 0-3.14-1.222-6.092-3.447-8.317z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services &amp; Occasions</a></li>
+                        <li><a href="about.html">About Afsal Caterers</a></li>
+                        <li><a href="menu.html">Full Catering Menu (7 Pages)</a></li>
+                        <li><a href="gallery.html">Real Event Photos</a></li>
+                        <li><a href="contact.html">Contact &amp; Bookings</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="services.html#catering">Multi-Cuisine Catering</a></li>
+                        <li><a href="services.html#stage-decor">Wedding Stage Decoration</a></li>
+                        <li><a href="services.html#light-sound">Sound Systems &amp; Lighting</a></li>
+                        <li><a href="services.html#tents">German Tents &amp; Pagodas</a></li>
+                        <li><a href="services.html#photography">Photography &amp; Video</a></li>
+                        <li><a href="services.html#hospitality">Guest Hospitality &amp; Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div class="footer-col">
+                    <h4>Office Address</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>
+                                Afsal Caterers &amp; Events<br>
+                                Chathanadu, Alappuzha, Kerala &ndash; 688006<br>
+                                <a href="https://maps.app.goo.gl/mxKnM1czG8oSCBQW9" target="_blank" rel="noopener" style="color: #FF6B72; font-weight: 600; text-decoration: underline; display: inline-flex; align-items: center; gap: 4px; margin-top: 4px;">
+                                    <span>View on Google Maps</span> &rarr;
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+91 90378 88910 / +91 94477 80608</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>afsalcatering@gmail.com</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span>Serving All 14 Districts of Kerala</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Afsal Caterers &amp; Events. All Rights Reserved. Feel The Real Taste.</p>
+                <p>Complete Event Management &bull; Founded by Mr. Ashker C.H. &bull; Alappuzha, Kerala</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <!-- Floating Sticky Rounded WhatsApp Button -->
+    <a href="https://wa.me/919037888910?text=Hi%20there,%20for%20an%20enquiry%20regarding%20your%20event%20management%20and%20catering%20services." target="_blank" rel="noopener" class="sticky-whatsapp-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp (+91 90378 88910)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.3-.778.98-.954 1.18-.175.2-.351.225-.652.075-.301-.15-1.272-.469-2.423-1.496-.895-.798-1.5-1.784-1.675-2.085-.175-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.151-.175.2-.301.301-.501.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.239-.244-.589-.493-.509-.678-.519l-.578-.01c-.2 0-.527.075-.803.376s-1.054 1.03-1.054 2.512c0 1.482 1.079 2.912 1.23 3.113.15.2 2.122 3.24 5.141 4.543.718.31 1.279.495 1.716.634.721.229 1.377.197 1.896.119.579-.087 1.78-.727 2.031-1.43.251-.703.251-1.305.176-1.43-.076-.126-.276-.201-.577-.351zM12.004 21.75c-1.748 0-3.461-.462-4.966-1.336l-.356-.207-3.691.968.985-3.598-.228-.363a9.718 9.718 0 0 1-1.498-5.172c0-5.385 4.381-9.768 9.764-9.768 2.608 0 5.06 1.017 6.905 2.862 1.845 1.845 2.861 4.296 2.86 6.904 0 5.387-4.381 9.77-9.775 9.77zm8.313-18.084A11.66 11.66 0 0 0 12.004.25C5.524.25.25 5.525.25 12.006c0 2.07.541 4.092 1.569 5.87L.25 23.75l6.022-1.58a11.72 11.72 0 0 0 5.732 1.488h.005c6.48 0 11.754-5.275 11.755-11.758 0-3.14-1.222-6.092-3.447-8.317z"/></svg>
+    </a>
+
+    <!-- Core Interactive Scripts -->
+    <script src="js/script.js?v=3.6"></script>
 </body>
 </html>

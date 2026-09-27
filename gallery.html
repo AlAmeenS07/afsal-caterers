@@ -3,110 +3,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Afsel Caterers & Events</title>
+    <title>Real Event Gallery | Afsal Caterers &amp; Events Kerala</title>
+    <meta name="description" content="Explore real event photography and video highlights from actual weddings, stage decorations, and banquet catering executed by Afsal Caterers across Kerala.">
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- Google Fonts: Single Unified Modern Typeface (Outfit) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="bg-cream">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <header class="header" id="header">
-        <div class="nav-container">
-            <div class="nav-left">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-            </div>
-            <a href="index.html" class="logo-img-wrap"><div class="logo-badge-ring"><img src="afsal-logo.png" alt="Afsel Caterers Logo" class="nav-logo-img"></div></a>
-            <div class="nav-right">
-                <a href="menu.html" class="nav-link">Menu</a>
-                <a href="gallery.html" class="nav-link active">Gallery</a>
-                <a href="index.html#contact" class="btn btn-pill">Contact Us</a>
-            </div>
-            <div class="hamburger">
-                <span></span><span></span><span></span>
+        <!-- Favicon -->
+    <link rel="icon" type="image/png" href="afsal-logo.png">
+    <link rel="apple-touch-icon" href="afsal-logo.png">
+
+    <link rel="stylesheet" href="css/style.css?v=3.5">
+</head>
+<body class="bg-white">
+
+    <!-- Main Site Navigation (Standard Clean Light Header) -->
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo-container" aria-label="Afsal Caterers Homepage">
+                <img src="afsal-logo.png" alt="Afsal Caterers &amp; Events Logo" class="brand-logo-img">
+                <div class="brand-text-block">
+                    <span class="brand-text-name">AFSAL</span>
+                    <span class="brand-text-sub">Caterers &amp; Events</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-action">
+                <a href="tel:+919037888910" class="nav-phone-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>+91 90378 88910</span>
+                </a>
+                <a href="contact.html" class="btn btn-primary btn-pill">Plan An Event</a>
+                <button class="hamburger" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
-    <div class="mobile-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="gallery.html" class="active">Gallery</a>
-        <a href="index.html#contact">Contact Us</a>
-    </div>
 
-    <!-- Gallery Section -->
-    <section class="gallery-page page-padding">
+    <!-- Mobile Drawer & Backdrop -->
+    <div class="mobile-nav-backdrop"></div>
+    <aside class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div style="margin-top: 36px;">
+            <a href="contact.html" class="btn btn-primary btn-pill" style="width: 100%;">Plan Your Event</a>
+        </div>
+    </aside>
+
+    <!-- Page Header & Category Filter Tabs -->
+    <section class="gallery-page-header">
         <div class="container">
-            <div class="gallery-block">
-                <h2 class="section-title text-center text-dark">Our Work</h2>
-                <p class="section-desc text-center">Take a look at some of the beautiful moments we've crafted for our clients.</p>
-                
-                <div class="gallery-grid" id="google-drive-gallery">
-                    <div class="gallery-item"><img src="images/hero_image.jpg" alt="Wedding banquet"></div>
-                    <div class="gallery-item"><img src="images/stage_decoration.jpg" alt="Stage decoration"></div>
-                    <div class="gallery-item"><img src="images/catering_service.jpg" alt="Catering service"></div>
-                    <div class="gallery-item"><img src="images/event_service.jpg" alt="Event setup"></div>
-                    <div class="gallery-item"><img src="images/hero_image.jpg" alt="Event hall"></div>
-                    <div class="gallery-item"><img src="images/stage_decoration.jpg" alt="Wedding stage"></div>
-                </div>
+            <span class="section-tag">Our Portfolio</span>
+            <h1 class="section-title">Event Photo Gallery</h1>
+            <p class="section-desc">
+                Browse photos from our recent weddings, stage decorations, and catering events across Kerala. Click any photo to view in full size.
+            </p>
+
+            <div class="gallery-filter-tabs">
+                <button class="gallery-tab-btn active" data-filter="all">All Photos</button>
+                <button class="gallery-tab-btn" data-filter="stage">Weddings &amp; Stages</button>
+                <button class="gallery-tab-btn" data-filter="dining">Banquets &amp; Dining</button>
+                <button class="gallery-tab-btn" data-filter="decor">Lighting &amp; Venues</button>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer-dark bg-dark text-white">
-        <svg class="wave-footer" viewBox="0 0 1440 60" preserveAspectRatio="none" style="background-color: var(--cream-bg);">
-            <path fill="var(--brand-dark)" d="M0,60 C150,0 350,60 500,30 C650,0 850,60 1000,30 C1150,0 1350,60 1440,30 L1440,60 L0,60 Z"></path>
-        </svg>
-        <div class="container footer-container">
-            <div class="footer-left">
-                <h2 class="footer-title">Stay in the loop with<br>Afsel Caterers</h2>
-                <form class="footer-newsletter">
-                    <input type="email" placeholder="Enter your email">
-                    <button type="submit" class="btn-circle">→</button>
-                </form>
-                <div class="footer-contact-info mt-30">
-                    <p>+015982694756</p>
-                    <p>info@afselcaterers.com</p>
+
+
+    <!-- Gallery Grid of Real Photos (Clickable Lightbox) -->
+    <main class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-masonry-grid">
+
+                <!-- Item 1 -->
+                <div class="gallery-photo-card" data-category="dining decor">
+                    <img src="images/event-1.jpg" alt="Afsal Caterers banquet table setup with candle decoration" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Banquets &amp; Dining</span>
+                        <h4>VIP Dining Table Decor</h4>
+                        <p>Candles and fresh flower centerpieces.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-links">
-                <div class="link-column">
-                    <h4>Page Links</h4>
-                    <a href="index.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">About</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="index.html#contact">Contact</a>
+
+                <!-- Item 2 -->
+                <div class="gallery-photo-card" data-category="stage decor">
+                    <img src="images/event-2.jpg" alt="Floral wedding stage with banquet seating" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Weddings &amp; Stages</span>
+                        <h4>Emerald Floral Wedding Stage</h4>
+                        <p>Stage arch with lighting and guest tables.</p>
+                    </div>
                 </div>
-                <div class="link-column">
-                    <h4>Services</h4>
-                    <a href="#">Wedding Catering</a>
-                    <a href="#">Stage Decoration</a>
-                    <a href="#">Event Management</a>
-                    <a href="#">Private Parties</a>
+
+                <!-- Item 3 -->
+                <div class="gallery-photo-card" data-category="dining">
+                    <img src="images/event-3.jpg" alt="Wedding banquet hall dining setup by Afsal Caterers" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Banquets &amp; Dining</span>
+                        <h4>Round Table Dining Setup</h4>
+                        <p>Coordinated chair covers and neat tableware.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-card text-dark">
-                <h3>Our location</h3>
-                <p>123 Event Street<br>Cateringville, CA 90210</p>
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--brand-red)" stroke-width="2" style="margin:12px auto;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <h3>Opening hours</h3>
-                <p>Mon - Fri: 7:00 AM – 8:00 PM<br>Sat - Sun: 8:00 AM – 6:00 PM</p>
-                <a href="index.html#contact" class="btn btn-pill-solid bg-yellow text-dark mt-30">Book an event</a>
+
+                <!-- Item 4 -->
+                <div class="gallery-photo-card" data-category="decor stage">
+                    <img src="images/event-4.jpg" alt="Event entrance decor and lighting" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Lighting &amp; Venues</span>
+                        <h4>Venue Entrance Lighting</h4>
+                        <p>Warm mood lighting and welcome entrance.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-photo-card" data-category="stage">
+                    <img src="images/event-5.jpg" alt="Wedding reception stage by Afsal Events" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Weddings &amp; Stages</span>
+                        <h4>Wedding Stage &amp; Mandap</h4>
+                        <p>Wedding stage backdrop with fresh flower decoration.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-photo-card" data-category="dining">
+                    <img src="images/event-6.jpg" alt="Dining table with floral centerpiece" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Banquets &amp; Dining</span>
+                        <h4>Banquet Table Setup</h4>
+                        <p>Careful attention to neat dining presentation.</p>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="gallery-photo-card" data-category="stage decor">
+                    <img src="images/event-7.jpg" alt="Wedding stage floral arch" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Weddings &amp; Stages</span>
+                        <h4>Grand Wedding Stage</h4>
+                        <p>Custom stage setup tailored for the ceremony.</p>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="gallery-photo-card" data-category="decor">
+                    <img src="images/event-8.jpg" alt="Venue lighting and canopy ceiling draping" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Lighting &amp; Venues</span>
+                        <h4>Ceiling Fabric Draping</h4>
+                        <p>Ceiling fabric draping and chandeliers.</p>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="gallery-photo-card" data-category="dining">
+                    <img src="images/event-9.jpg" alt="Afsal Caterers live buffet counters" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Banquets &amp; Dining</span>
+                        <h4>Live Buffet Counters</h4>
+                        <p>Clean buffet setup and hot food counters.</p>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="gallery-photo-card" data-category="stage">
+                    <img src="images/event-10.jpg" alt="Celebration backdrop and seating" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Weddings &amp; Stages</span>
+                        <h4>Bridal Throne &amp; Backdrop</h4>
+                        <p>Comfortable seating with fresh flower arrangements.</p>
+                    </div>
+                </div>
+
+                <!-- Item 11 -->
+                <div class="gallery-photo-card" data-category="decor">
+                    <img src="images/event-11.jpg" alt="Venue pathway floral lighting" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Lighting &amp; Venues</span>
+                        <h4>Pathway &amp; Entry Walkway</h4>
+                        <p>Well-lit guest entry with fresh flower pillars.</p>
+                    </div>
+                </div>
+
+                <!-- Item 12 -->
+                <div class="gallery-photo-card" data-category="dining">
+                    <img src="images/event-12.jpg" alt="Banquet catering service in action" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Banquets &amp; Dining</span>
+                        <h4>Friendly Catering Service</h4>
+                        <p>Uniformed staff serving guests promptly and courteously.</p>
+                    </div>
+                </div>
+
+                <!-- Item 13 -->
+                <div class="gallery-photo-card" data-category="stage">
+                    <img src="images/event-13.jpg" alt="Evening reception stage ambiance" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Weddings &amp; Stages</span>
+                        <h4>Evening Reception Stage</h4>
+                        <p>Evening lights complementing the stage background.</p>
+                    </div>
+                </div>
+
+                <!-- Item 14 -->
+                <div class="gallery-photo-card" data-category="decor dining">
+                    <img src="images/event-14.jpg" alt="VIP dining hall setup" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Lighting &amp; Venues</span>
+                        <h4>Dining Hall Setup</h4>
+                        <p>Comfortable, air-conditioned dining area.</p>
+                    </div>
+                </div>
+
+                <!-- Item 15 -->
+                <div class="gallery-photo-card" data-category="stage">
+                    <img src="images/event-15.jpg" alt="Floral mandap wedding details" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Weddings &amp; Stages</span>
+                        <h4>Traditional Mandap Elements</h4>
+                        <p>Traditional brass lamps, marigold and jasmine flowers.</p>
+                    </div>
+                </div>
+
+                <!-- Item 16 -->
+                <div class="gallery-photo-card" data-category="dining decor">
+                    <img src="images/event-16.jpg" alt="Buffet spread and mocktail station" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Banquets &amp; Dining</span>
+                        <h4>Welcome Drinks Counter</h4>
+                        <p>Fresh juices and welcome drinks served on arrival.</p>
+                    </div>
+                </div>
+
+                <!-- Item 17 -->
+                <div class="gallery-photo-card" data-category="stage decor">
+                    <img src="images/event-17.jpg" alt="Contemporary wedding stage" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Weddings &amp; Stages</span>
+                        <h4>Modern Wedding Stage</h4>
+                        <p>Clean design and soft stage lighting.</p>
+                    </div>
+                </div>
+
+                <!-- Item 18 -->
+                <div class="gallery-photo-card" data-category="decor">
+                    <img src="images/event-18.jpg" alt="German tent and outdoor event setup" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Lighting &amp; Venues</span>
+                        <h4>German Tent &amp; Pagoda Setup</h4>
+                        <p>Weatherproof tents for weddings and large gatherings.</p>
+                    </div>
+                </div>
+
+                <!-- Item 19 -->
+                <div class="gallery-photo-card" data-category="dining">
+                    <img src="images/event-19.jpg" alt="Traditional Kerala Sadhya and Biriyani service" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Banquets &amp; Dining</span>
+                        <h4>Hot Food Service</h4>
+                        <p>Serving hot meals and Biriyani to guests.</p>
+                    </div>
+                </div>
+
+                <!-- Item 20 -->
+                <div class="gallery-photo-card" data-category="stage">
+                    <img src="images/event-20.jpg" alt="Stage lighting and sound setup" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Weddings &amp; Stages</span>
+                        <h4>Stage Lighting &amp; Audio</h4>
+                        <p>Stage spotlights and evening mood lighting.</p>
+                    </div>
+                </div>
+
+                <!-- Item 21 -->
+                <div class="gallery-photo-card" data-category="dining decor">
+                    <img src="images/event-21.jpg" alt="Full event overview banquet by Afsal Caterers" class="gallery-photo-thumb" loading="lazy">
+                    <div class="gallery-photo-overlay">
+                        <span class="gallery-overlay-badge">Banquets &amp; Dining</span>
+                        <h4>Full Event Venue</h4>
+                        <p>Complete event setup managed from start to finish.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="footer-bottom-bar">
-            <p>Designed by Afsel Caterers & Events</p>
-            <div class="footer-socials">
-                <a href="#">FB</a><a href="#">IG</a><a href="#">WA</a>
+    </main>
+
+    <!-- Fullscreen Interactive Lightbox Modal -->
+    <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Preview Lightbox">
+        <div class="lightbox-content-box">
+            <button class="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+            <button class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous Photo">&#10094;</button>
+            <button class="lightbox-nav-btn lightbox-next-btn" aria-label="Next Photo">&#10095;</button>
+            
+            <div class="lightbox-img-wrapper">
+                <img src="" alt="" class="lightbox-main-img">
             </div>
-            <p>Privacy Policy</p>
+            
+            <div class="lightbox-caption-wrap">
+                <h3 class="lightbox-title">Afsal Caterers Event</h3>
+                <p class="lightbox-subtitle">Real Event Showcase</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Master Footer -->
+    <footer class="site-footer-architectural">
+        <div class="footer-watermark" aria-hidden="true">AFSAL</div>
+        <div class="container footer-content-wrap">
+            <div class="footer-top-grid">
+                <!-- Col 1: Brand Info -->
+                <div class="footer-brand-col">
+                    <div class="footer-logo-row">
+                        <img src="afsal-logo.png" alt="Afsal Caterers &amp; Events Logo" class="footer-logo-img">
+                        <div>
+                            <div class="footer-brand-name">AFSAL CATERERS</div>
+                            <div class="footer-brand-tagline">&amp; EVENTS MANAGEMENT</div>
+                        </div>
+                    </div>
+                    <p class="footer-brand-desc">
+                        Founded in 2000 by Mr. Ashker C.H. in Alappuzha, Afsal Caterers is one of Kerala's most trusted catering and event management teams. Delivering quality food, beautiful stage decor, and reliable event arrangements across all 14 districts.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://www.facebook.com/afsalcateringalpy/" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/afsalcaterers/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://wa.me/919037888910?text=Hi%20there,%20for%20an%20enquiry%20regarding%20your%20event%20management%20and%20catering%20services." class="footer-social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.3-.778.98-.954 1.18-.175.2-.351.225-.652.075-.301-.15-1.272-.469-2.423-1.496-.895-.798-1.5-1.784-1.675-2.085-.175-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.151-.175.2-.301.301-.501.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.239-.244-.589-.493-.509-.678-.519l-.578-.01c-.2 0-.527.075-.803.376s-1.054 1.03-1.054 2.512c0 1.482 1.079 2.912 1.23 3.113.15.2 2.122 3.24 5.141 4.543.718.31 1.279.495 1.716.634.721.229 1.377.197 1.896.119.579-.087 1.78-.727 2.031-1.43.251-.703.251-1.305.176-1.43-.076-.126-.276-.201-.577-.351zM12.004 21.75c-1.748 0-3.461-.462-4.966-1.336l-.356-.207-3.691.968.985-3.598-.228-.363a9.718 9.718 0 0 1-1.498-5.172c0-5.385 4.381-9.768 9.764-9.768 2.608 0 5.06 1.017 6.905 2.862 1.845 1.845 2.861 4.296 2.86 6.904 0 5.387-4.381 9.77-9.775 9.77zm8.313-18.084A11.66 11.66 0 0 0 12.004.25C5.524.25.25 5.525.25 12.006c0 2.07.541 4.092 1.569 5.87L.25 23.75l6.022-1.58a11.72 11.72 0 0 0 5.732 1.488h.005c6.48 0 11.754-5.275 11.755-11.758 0-3.14-1.222-6.092-3.447-8.317z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services &amp; Occasions</a></li>
+                        <li><a href="about.html">About Afsal Caterers</a></li>
+                        <li><a href="menu.html">Full Catering Menu</a></li>
+                        <li><a href="gallery.html">Real Event Photos</a></li>
+                        <li><a href="contact.html">Contact &amp; Bookings</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="services.html#catering">Multi-Cuisine Catering</a></li>
+                        <li><a href="services.html#stage-decor">Wedding Stage Decoration</a></li>
+                        <li><a href="services.html#light-sound">Sound Systems &amp; Lighting</a></li>
+                        <li><a href="services.html#tents">German Tents &amp; Pagodas</a></li>
+                        <li><a href="services.html#photography">Photography &amp; Video</a></li>
+                        <li><a href="services.html#hospitality">Guest Hospitality &amp; Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div class="footer-col">
+                    <h4>Office Address</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>
+                                Afsal Caterers &amp; Events<br>
+                                Chathanadu, Alappuzha, Kerala &ndash; 688006<br>
+                                <a href="https://maps.app.goo.gl/mxKnM1czG8oSCBQW9" target="_blank" rel="noopener" style="color: #FF6B72; font-weight: 600; text-decoration: underline; display: inline-flex; align-items: center; gap: 4px; margin-top: 4px;">
+                                    <span>View on Google Maps</span> &rarr;
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+91 90378 88910 / +91 94477 80608</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>afsalcatering@gmail.com</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span>Serving All 14 Districts of Kerala</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Afsal Caterers &amp; Events. All Rights Reserved. Feel The Real Taste.</p>
+                <p>Complete Event Management &bull; Founded by Mr. Ashker C.H. &bull; Alappuzha, Kerala</p>
+            </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Floating Sticky Rounded WhatsApp Button -->
+    <a href="https://wa.me/919037888910?text=Hi%20there,%20for%20an%20enquiry%20regarding%20your%20event%20management%20and%20catering%20services." target="_blank" rel="noopener" class="sticky-whatsapp-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp (+91 90378 88910)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.3-.778.98-.954 1.18-.175.2-.351.225-.652.075-.301-.15-1.272-.469-2.423-1.496-.895-.798-1.5-1.784-1.675-2.085-.175-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.151-.175.2-.301.301-.501.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.239-.244-.589-.493-.509-.678-.519l-.578-.01c-.2 0-.527.075-.803.376s-1.054 1.03-1.054 2.512c0 1.482 1.079 2.912 1.23 3.113.15.2 2.122 3.24 5.141 4.543.718.31 1.279.495 1.716.634.721.229 1.377.197 1.896.119.579-.087 1.78-.727 2.031-1.43.251-.703.251-1.305.176-1.43-.076-.126-.276-.201-.577-.351zM12.004 21.75c-1.748 0-3.461-.462-4.966-1.336l-.356-.207-3.691.968.985-3.598-.228-.363a9.718 9.718 0 0 1-1.498-5.172c0-5.385 4.381-9.768 9.764-9.768 2.608 0 5.06 1.017 6.905 2.862 1.845 1.845 2.861 4.296 2.86 6.904 0 5.387-4.381 9.77-9.775 9.77zm8.313-18.084A11.66 11.66 0 0 0 12.004.25C5.524.25.25 5.525.25 12.006c0 2.07.541 4.092 1.569 5.87L.25 23.75l6.022-1.58a11.72 11.72 0 0 0 5.732 1.488h.005c6.48 0 11.754-5.275 11.755-11.758 0-3.14-1.222-6.092-3.447-8.317z"/></svg>
+    </a>
+
+    <script src="js/script.js?v=3.6"></script>
 </body>
 </html>
