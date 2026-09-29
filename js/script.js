@@ -472,11 +472,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Update thumbnails
+            const strip = document.querySelector('.menu-thumbnails-strip');
             thumbs.forEach((thumb, idx) => {
                 const isActive = (idx + 1 === currentPage);
                 thumb.classList.toggle('active', isActive);
-                if (isActive) {
-                    thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                if (isActive && strip) {
+                    const scrollLeft = thumb.offsetLeft - (strip.clientWidth / 2) + (thumb.clientWidth / 2);
+                    strip.scrollTo({ left: scrollLeft, behavior: 'smooth' });
                 }
             });
 

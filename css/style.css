@@ -4409,17 +4409,58 @@ button, input, select, textarea {
         justify-content: center;
     }
     .menu-stage-outer {
-        gap: 12px;
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
     }
     .stage-nav-external {
-        width: 42px;
-        height: 42px;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+    .menu-slider-viewport {
+        padding: 8px;
+        min-width: 0;
+        flex: 1 1 auto;
+        border-radius: 10px;
+    }
+    .menu-slides-container {
+        min-height: auto;
+    }
+    .menu-thumbnails-wrapper {
+        padding: 14px 16px;
+        overflow: hidden;
     }
     .menu-thumbnails-strip {
         gap: 10px;
+        width: 100%;
+        max-width: 100%;
     }
     .menu-thumb-item {
         flex: 0 0 76px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-stage-outer {
+        gap: 6px;
+    }
+    .stage-nav-external {
+        width: 36px;
+        height: 36px;
+    }
+    .stage-nav-external svg {
+        width: 18px;
+        height: 18px;
+    }
+    .menu-slider-viewport {
+        padding: 6px;
+    }
+    .menu-thumb-item {
+        flex: 0 0 68px;
+    }
+    .menu-thumbnails-wrapper {
+        padding: 12px 10px;
     }
 }
 
