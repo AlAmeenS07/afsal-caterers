@@ -58,6 +58,17 @@
     box-sizing: border-box;
 }
 
+/* Custom Text Selection / Copy Color (Soft Light Red) */
+::selection {
+    background-color: #FECDD3;
+    color: #991B1B;
+}
+
+::-moz-selection {
+    background-color: #FECDD3;
+    color: #991B1B;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
