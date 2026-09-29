@@ -3577,6 +3577,12 @@ button, input, select, textarea {
         padding: 11px 14px;
         font-size: 0.9rem;
     }
+    .booking-form-card button[type="submit"],
+    .booking-form-card .btn-lg {
+        padding: 14px 20px;
+        min-height: 48px;
+        font-size: 0.94rem;
+    }
 
     /* Quote Strip */
     .custom-quote-strip {
@@ -3647,6 +3653,12 @@ button, input, select, textarea {
     .btn {
         padding: 11px 18px;
         font-size: 0.86rem;
+    }
+    .booking-form-card button[type="submit"],
+    .booking-form-card .btn-lg {
+        padding: 13.5px 18px;
+        min-height: 46px;
+        font-size: 0.9rem;
     }
     .bento-card.span-7,
     .bento-card.span-5,
