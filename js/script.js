@@ -53,6 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
         heroBgVideo.play().catch(() => {});
     }
 
+    // ====== Seamless Clients Marquee (Single HTML Source, Zero Duplication) ======
+    const marqueeContainers = document.querySelectorAll('.marquee-container');
+    marqueeContainers.forEach(container => {
+        const track = container.querySelector('.marquee-track');
+        if (track && !container.dataset.cloned) {
+            container.dataset.cloned = 'true';
+            const clone = track.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            container.appendChild(clone);
+        }
+    });
+
     // ====== FAQ Accordion ======
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {

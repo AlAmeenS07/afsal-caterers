@@ -1016,6 +1016,9 @@ button, input, select, textarea {
     overflow: hidden;
     user-select: none;
     position: relative;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .marquee-container::before,
@@ -1050,11 +1053,13 @@ button, input, select, textarea {
     flex-shrink: 0;
     align-items: center;
     gap: 28px;
-    animation: scrollMarquee 38s linear infinite;
     padding: 10px 0;
+    padding-right: 28px;
+    animation: scrollMarquee 42s linear infinite;
+    will-change: transform;
 }
 
-.marquee-track:hover {
+.marquee-container:hover .marquee-track {
     animation-play-state: paused;
 }
 
@@ -1076,15 +1081,15 @@ button, input, select, textarea {
     border-radius: var(--radius-sm);
     padding: 12px 24px;
     white-space: nowrap;
-    transition: var(--transition);
+    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
     cursor: default;
+    flex-shrink: 0;
 }
 
 .client-badge-card:hover {
     border-color: var(--brand-red);
     background-color: #FFFFFF;
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(217, 27, 36, 0.08);
 }
 
 .client-badge-icon {
@@ -1549,11 +1554,12 @@ button, input, select, textarea {
     margin-bottom: 12px;
     display: block;
     letter-spacing: -1px;
+    transition: color 0.3s ease;
 }
 
-.service-deep-card:hover .service-deep-number {
+.service-deep-card:hover .service-deep-number,
+.service-grid-card:hover .service-deep-number {
     color: var(--brand-red);
-    transition: color 0.3s ease;
 }
 
 .service-deep-title {
@@ -4886,11 +4892,16 @@ button, input, select, textarea {
 .process-step-num {
     font-family: var(--font-heading);
     font-size: 2.2rem;
-    color: var(--brand-red);
+    color: rgba(217, 27, 36, 0.25);
     font-weight: 700;
     display: block;
     margin-bottom: 12px;
     line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.process-step-card:hover .process-step-num {
+    color: var(--brand-red);
 }
 
 /* Tablet & Mobile Responsive Adjustments (<= 900px) */
