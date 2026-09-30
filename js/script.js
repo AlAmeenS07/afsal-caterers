@@ -246,46 +246,261 @@ document.addEventListener('DOMContentLoaded', () => {
         menuSearchInput.addEventListener('input', filterMenu);
     }
 
-    // ====== Booking Inquiry Form (WhatsApp Direct Integration) ======
+    // ====== Global Toast Notification Helper ======
+    window.showToastNotice = function(message, duration = 3500) {
+        let toast = document.getElementById('globalSiteToast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'globalSiteToast';
+            toast.className = 'site-toast-notice';
+            document.body.appendChild(toast);
+        }
+        toast.textContent = message;
+        toast.classList.add('show');
+        clearTimeout(toast._timeout);
+        toast._timeout = setTimeout(() => {
+            toast.classList.remove('show');
+        }, duration);
+    };
+
+    // Helper to sanitize HTML for UI rendering
+    function escapeHtml(str) {
+        if (!str) return '';
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
+    // ====== Booking Inquiry Form (Formspree Email Integration) ======
     const bookingForm = document.getElementById('bookingInquiryForm');
     if (bookingForm) {
-        bookingForm.addEventListener('submit', (e) => {
+        const nameInput = document.getElementById('clientName');
+        const phoneInput = document.getElementById('clientPhone');
+        const phoneError = document.getElementById('phoneErrorMsg');
+        const eventTypeSelect = document.getElementById('eventType');
+        const eventDateInput = document.getElementById('eventDate');
+        const locationInput = document.getElementById('eventLocation');
+        const guestCountInput = document.getElementById('guestCount');
+        const notesInput = document.getElementById('eventNotes');
+        const submitBtn = document.getElementById('submitEnquiryBtn');
+        const alertBox = document.getElementById('formAlertBox');
+
+        // Set minimum date for event booking to today
+        if (eventDateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            eventDateInput.setAttribute('min', today);
+        }
+
+        // Real-time phone number input sanitizer (Strictly Digits Only, Max 10)
+        if (phoneInput) {
+            phoneInput.addEventListener('input', (e) => {
+                // Strip all non-digit characters
+                e.target.value = e.target.value.replace(/\D/g, '').slice(0, 10);
+                
+                if (e.target.value.length === 10) {
+                    phoneInput.classList.remove('is-invalid');
+                    if (phoneError) phoneError.style.display = 'none';
+                }
+            });
+
+            phoneInput.addEventListener('blur', (e) => {
+                const val = e.target.value.trim();
+                if (val && val.length !== 10) {
+                    phoneInput.classList.add('is-invalid');
+                    if (phoneError) phoneError.style.display = 'block';
+                } else {
+                    phoneInput.classList.remove('is-invalid');
+                    if (phoneError) phoneError.style.display = 'none';
+                }
+            });
+        }
+
+        // Clear invalid state on inputs when typing
+        [nameInput, eventTypeSelect, eventDateInput, locationInput, guestCountInput].forEach(elem => {
+            if (elem) {
+                elem.addEventListener('input', () => elem.classList.remove('is-invalid'));
+                elem.addEventListener('change', () => elem.classList.remove('is-invalid'));
+            }
+        });
+
+        bookingForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            const name = document.getElementById('clientName')?.value.trim() || '';
-            const phone = document.getElementById('clientPhone')?.value.trim() || '';
-            const eventType = document.getElementById('eventType')?.value || 'Event';
-            const eventDate = document.getElementById('eventDate')?.value || 'TBD';
-            const guestCount = document.getElementById('guestCount')?.value.trim() || 'TBD';
-            const location = document.getElementById('eventLocation')?.value.trim() || 'Kerala';
-            const notes = document.getElementById('eventNotes')?.value.trim() || '';
-
-            let whatsappMessage = `*NEW EVENT ENQUIRY - AFSAL CATERERS & EVENTS*\n`;
-            whatsappMessage += `--------------------------------------\n`;
-            whatsappMessage += `*Name:* ${name}\n`;
-            whatsappMessage += `*Phone / WhatsApp:* ${phone}\n`;
-            whatsappMessage += `*Occasion:* ${eventType}\n`;
-            whatsappMessage += `*Event Date:* ${eventDate}\n`;
-            whatsappMessage += `*Guests:* ${guestCount}\n`;
-            whatsappMessage += `*Venue / Location:* ${location}\n`;
-            if (notes) {
-                whatsappMessage += `*Preferences / Notes:* ${notes}\n`;
-            }
-            whatsappMessage += `--------------------------------------\n`;
-            whatsappMessage += `_Enquiry sent from Afsal Caterers Official Website_`;
-
-            // Afsal Caterers official WhatsApp number
-            const whatsappNumber = '919037888910';
-            const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
-            // Show confirmation toast
-            if (typeof showToastNotice === 'function') {
-                showToastNotice('Opening WhatsApp with your event details...');
+            // Clear previous alerts
+            if (alertBox) {
+                alertBox.style.display = 'none';
+                alertBox.className = 'form-alert-box';
+                alertBox.innerHTML = '';
             }
 
-            setTimeout(() => {
-                window.open(waUrl, '_blank');
-            }, 300);
+            const name = nameInput?.value.trim() || '';
+            const phone = phoneInput?.value.trim() || '';
+            const eventType = eventTypeSelect?.value || '';
+            const eventDate = eventDateInput?.value || '';
+            const location = locationInput?.value.trim() || '';
+            const guestCount = guestCountInput?.value.trim() || '';
+            const notes = notesInput?.value.trim() || '';
+
+            // --- Validation Checks ---
+            let isValid = true;
+            let firstInvalidElem = null;
+
+            if (!name) {
+                nameInput?.classList.add('is-invalid');
+                isValid = false;
+                if (!firstInvalidElem) firstInvalidElem = nameInput;
+            }
+
+            // Strictly validate 10-digit phone number
+            const phoneDigitsRegex = /^\d{10}$/;
+            if (!phone || !phoneDigitsRegex.test(phone)) {
+                phoneInput?.classList.add('is-invalid');
+                if (phoneError) phoneError.style.display = 'block';
+                isValid = false;
+                if (!firstInvalidElem) firstInvalidElem = phoneInput;
+            } else {
+                phoneInput?.classList.remove('is-invalid');
+                if (phoneError) phoneError.style.display = 'none';
+            }
+
+            if (!eventType) {
+                eventTypeSelect?.classList.add('is-invalid');
+                isValid = false;
+                if (!firstInvalidElem) firstInvalidElem = eventTypeSelect;
+            }
+
+            if (!eventDate) {
+                eventDateInput?.classList.add('is-invalid');
+                isValid = false;
+                if (!firstInvalidElem) firstInvalidElem = eventDateInput;
+            }
+
+            if (!location) {
+                locationInput?.classList.add('is-invalid');
+                isValid = false;
+                if (!firstInvalidElem) firstInvalidElem = locationInput;
+            }
+
+            if (!guestCount) {
+                guestCountInput?.classList.add('is-invalid');
+                isValid = false;
+                if (!firstInvalidElem) firstInvalidElem = guestCountInput;
+            }
+
+            if (!isValid) {
+                if (firstInvalidElem) {
+                    firstInvalidElem.focus();
+                }
+                showToastNotice('Please fill in all required fields properly.');
+                return;
+            }
+
+            // --- EmailJS Payload & Credentials ---
+            const EMAILJS_SERVICE_ID = 'service_so4lb2h';
+            const EMAILJS_TEMPLATE_ID = 'template_nt2600k';
+            const EMAILJS_PUBLIC_KEY = 'Hh-FRlE05GFevMZKe';
+
+            // Format human-readable date
+            let formattedDate = eventDate;
+            try {
+                const dateObj = new Date(eventDate);
+                formattedDate = dateObj.toLocaleDateString('en-IN', {
+                    weekday: 'short',
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric'
+                });
+            } catch (err) {}
+
+            const submissionTime = new Date().toLocaleString('en-IN', {
+                timeZone: 'Asia/Kolkata',
+                dateStyle: 'medium',
+                timeStyle: 'short'
+            });
+
+            const dynamicSubject = `New Enquiry: ${eventType}`;
+
+            const emailJsPayload = {
+                service_id: EMAILJS_SERVICE_ID,
+                template_id: EMAILJS_TEMPLATE_ID,
+                user_id: EMAILJS_PUBLIC_KEY,
+                template_params: {
+                    subject: dynamicSubject,
+                    client_name: name,
+                    name: name,
+                    client_phone: phone,
+                    phone: phone,
+                    event_type: eventType,
+                    event_date: formattedDate,
+                    event_location: location,
+                    guest_count: guestCount,
+                    special_requirements: notes || "No specific menu notes provided",
+                    message: notes || "No specific menu notes provided",
+                    submission_time: submissionTime,
+                    reply_to: 'afsalcatering@gmail.com'
+                }
+            };
+
+            // Loading state on button
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.classList.add('is-loading');
+                submitBtn.innerHTML = '<span class="btn-spinner"></span> Submitting Enquiry...';
+            }
+
+            try {
+                const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(emailJsPayload)
+                });
+
+                if (response.ok || response.status === 200) {
+                    // Success feedback
+                    if (alertBox) {
+                        alertBox.className = 'form-alert-box success';
+                        alertBox.innerHTML = `
+                            <strong>✓ Enquiry Received Successfully!</strong>
+                            <p>Thank you <b>${escapeHtml(name)}</b>. Your event catering details have been submitted. Our team will review your menu requirements and reach out to you at <b>+91 ${escapeHtml(phone)}</b> shortly.</p>
+                        `;
+                        alertBox.style.display = 'block';
+                        alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+
+                    bookingForm.reset();
+                    showToastNotice('Enquiry sent successfully! We will contact you soon.');
+                } else {
+                    const errorText = await response.text().catch(() => 'Unable to send enquiry.');
+
+                    if (alertBox) {
+                        alertBox.className = 'form-alert-box error';
+                        alertBox.innerHTML = `
+                            <strong>✕ Submission Issue</strong>
+                            <p>${escapeHtml(errorText)} You can also connect directly on <a href="https://wa.me/919037888910" target="_blank" rel="noopener">WhatsApp</a> or call <a href="tel:+919037888910">+91 90378 88910</a>.</p>
+                        `;
+                        alertBox.style.display = 'block';
+                        alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                }
+            } catch (networkError) {
+                if (alertBox) {
+                    alertBox.className = 'form-alert-box error';
+                    alertBox.innerHTML = `
+                        <strong>✕ Network Error</strong>
+                        <p>Could not connect to the mail service. Please check your connection or reach us directly on <a href="https://wa.me/919037888910" target="_blank" rel="noopener">WhatsApp (+91 90378 88910)</a>.</p>
+                    `;
+                    alertBox.style.display = 'block';
+                    alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('is-loading');
+                    submitBtn.innerHTML = '<span class="btn-text">Submit Enquiry &rarr;</span>';
+                }
+            }
         });
     }
 

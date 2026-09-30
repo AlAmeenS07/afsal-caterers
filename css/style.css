@@ -4762,6 +4762,120 @@ button, input, select, textarea {
     box-shadow: 0 0 0 4px rgba(217, 27, 36, 0.1);
 }
 
+.form-input.is-invalid, .form-select.is-invalid, .form-textarea.is-invalid {
+    border-color: #EF4444 !important;
+    background-color: #FEF2F2 !important;
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.12) !important;
+}
+
+.field-error-text {
+    display: block;
+    color: #DC2626;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 6px;
+    padding-left: 2px;
+}
+
+.form-alert-box {
+    padding: 16px 20px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    animation: fadeInSlide 0.3s ease;
+}
+
+.form-alert-box.success {
+    background: #F0FDF4;
+    border: 1.5px solid #86EFAC;
+    color: #166534;
+}
+
+.form-alert-box.error {
+    background: #FEF2F2;
+    border: 1.5px solid #FECACA;
+    color: #991B1B;
+}
+
+.form-alert-box strong {
+    display: block;
+    font-size: 1.02rem;
+    margin-bottom: 4px;
+}
+
+.form-alert-box p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+.form-alert-box a {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn.is-loading {
+    opacity: 0.85;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.btn-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    border-top-color: #FFFFFF;
+    animation: spinBtn 0.7s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+@keyframes spinBtn {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.site-toast-notice {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: #1F2937;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    border-radius: var(--radius-pill);
+    font-size: 0.92rem;
+    font-weight: 500;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    max-width: 90vw;
+    text-align: center;
+}
+
+.site-toast-notice.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
 .form-textarea {
     min-height: 110px;
     resize: vertical;
